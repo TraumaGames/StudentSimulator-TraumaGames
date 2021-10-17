@@ -1,0 +1,57 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://fonts/Billabong-font.ttf" type="DynamicFontData" id=2]
+[ext_resource path="res://scripts/MainMenu.gd" type="Script" id=3]
+
+[sub_resource type="DynamicFont" id=1]
+size = 60
+outline_color = Color( 0.0507813, 0.0330772, 0.0330772, 1 )
+font_data = ExtResource( 2 )
+
+[node name="Control" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CenterContainer" type="CenterContainer" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 1.14525
+margin_top = -0.746582
+margin_right = 1.14526
+margin_bottom = -0.746582
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="PanelContainer" type="PanelContainer" parent="CenterContainer"]
+margin_left = 341.0
+margin_top = 255.0
+margin_right = 682.0
+margin_bottom = 344.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CenterContainer/PanelContainer"]
+margin_left = 7.0
+margin_top = 7.0
+margin_right = 334.0
+margin_bottom = 82.0
+size_flags_horizontal = 4
+custom_constants/separation = 0
+
+[node name="Label" type="Label" parent="CenterContainer/PanelContainer/VBoxContainer"]
+margin_right = 327.0
+margin_bottom = 75.0
+size_flags_horizontal = 4
+custom_fonts/font = SubResource( 1 )
+custom_colors/font_color = Color( 0.647059, 0.870588, 0.67451, 1 )
+custom_colors/font_outline_modulate = Color( 0.262745, 0.368627, 0.215686, 1 )
+custom_colors/font_color_shadow = Color( 0.282353, 0.345098, 0.270588, 1 )
+text = "Student Simulator"
+
+[node name="Buttons" type="VBoxContainer" parent="CenterContainer/PanelContainer/VBoxContainer"]
+margin_top = 75.0
+margin_right = 327.0
+margin_bottom = 75.0
