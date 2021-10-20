@@ -1,0 +1,49 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://assets/card.PNG" type="Texture" id=1]
+[ext_resource path="res://fonts/Billabong-font.ttf" type="DynamicFontData" id=2]
+[ext_resource path="res://Entities/Card.gd" type="Script" id=3]
+
+[sub_resource type="DynamicFont" id=1]
+size = 82
+font_data = ExtResource( 2 )
+
+[node name="Card" type="Sprite"]
+scale = Vector2( 0.77981, 0.652332 )
+texture = ExtResource( 1 )
+script = ExtResource( 3 )
+
+[node name="Text" type="Label" parent="."]
+margin_left = -276.849
+margin_top = -199.0
+margin_right = 282.151
+margin_bottom = 96.0
+custom_fonts/font = SubResource( 1 )
+text = "Dedicate a otra cosa | 
+Na mentira"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Accept" type="Button" parent="."]
+margin_left = 137.134
+margin_top = 117.731
+margin_right = 222.134
+margin_bottom = 167.731
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Cancel" type="Button" parent="."]
+margin_left = -198.748
+margin_top = 118.735
+margin_right = -113.748
+margin_bottom = 168.735
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[connection signal="update_values" from="." to="." method="_on_Card_update_values"]
+[connection signal="pressed" from="Accept" to="." method="_on_Accept_pressed"]
+[connection signal="pressed" from="Cancel" to="." method="_on_Cancel_pressed"]
