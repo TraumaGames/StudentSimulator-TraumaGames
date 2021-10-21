@@ -1,8 +1,8 @@
 [gd_scene load_steps=5 format=2]
 
-[ext_resource path="res://assets/card.PNG" type="Texture" id=1]
-[ext_resource path="res://fonts/Billabong-font.ttf" type="DynamicFontData" id=2]
-[ext_resource path="res://Entities/Card.gd" type="Script" id=3]
+[ext_resource path="res://assets/art/card.PNG" type="Texture" id=1]
+[ext_resource path="res://assets/fonts/Billabong-font.ttf" type="DynamicFontData" id=2]
+[ext_resource path="res://Entities/Card/Card.gd" type="Script" id=3]
 
 [sub_resource type="DynamicFont" id=1]
 size = 82

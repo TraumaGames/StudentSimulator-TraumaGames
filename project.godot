@@ -21,7 +21,7 @@ _global_script_class_icons={
 [application]
 
 config/name="Student Simulator"
-run/main_scene="res://MainMenu.tscn"
+run/main_scene="res://Entities/HUD/HUD.tscn"
 config/icon="res://icon.png"
 
 [physics]
