@@ -8,8 +8,15 @@ onready var buttonAccept: Button = $Accept
 onready var buttonCancel: Button = $Cancel
 var stats_update_accept = {}
 var stats_update_cancel = {}
+var timer:Timer 
+
+func initialize_timer(timer):
+	self.timer=timer
+
+
 
 func update_values(text, textAccept, textCancel, stats_accept, stats_cancel):
+	timer.stop()
 	label.text = text
 	buttonAccept.text = textAccept
 	buttonCancel.text = textCancel
@@ -19,7 +26,9 @@ func update_values(text, textAccept, textCancel, stats_accept, stats_cancel):
 func _on_Accept_pressed():
 	self.hide()
 	emit_signal("close_card", stats_update_accept)
-
+	timer.start()
+	
 func _on_Cancel_pressed():
 	self.hide()
 	emit_signal("close_card", stats_update_cancel)
+	timer.start()
