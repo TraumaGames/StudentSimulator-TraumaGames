@@ -9,6 +9,7 @@ size = 82
 font_data = ExtResource( 2 )
 
 [node name="Card" type="Sprite"]
+position = Vector2( 511, 313 )
 scale = Vector2( 0.77981, 0.652332 )
 texture = ExtResource( 1 )
 script = ExtResource( 3 )

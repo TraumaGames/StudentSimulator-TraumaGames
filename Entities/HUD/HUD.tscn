@@ -1,8 +1,10 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://Entities/MenuButton/MenuButton.tscn" type="PackedScene" id=1]
 [ext_resource path="res://assets/fonts/Billabong-font.ttf" type="DynamicFontData" id=2]
 [ext_resource path="res://Entities/HUD/HUD.gd" type="Script" id=3]
+[ext_resource path="res://Entities/HUD/Inicio.gd" type="Script" id=4]
+[ext_resource path="res://Entities/Card/Card.tscn" type="PackedScene" id=5]
 
 [sub_resource type="DynamicFont" id=1]
 size = 60
@@ -36,6 +38,8 @@ margin_right = 334.0
 margin_bottom = 126.0
 size_flags_horizontal = 4
 custom_constants/separation = 0
+script = ExtResource( 4 )
+scene = ExtResource( 5 )
 
 [node name="TitleLabel" type="Label" parent="CenterContainer/PanelContainer/VBoxContainer"]
 margin_right = 327.0
@@ -57,3 +61,5 @@ margin_left = 13.0
 margin_right = 313.0
 margin_bottom = 44.0
 text = "Jugar"
+
+[connection signal="pressed" from="CenterContainer/PanelContainer/VBoxContainer/Buttons/StartButton" to="CenterContainer/PanelContainer/VBoxContainer" method="_on_StartButton_pressed"]
