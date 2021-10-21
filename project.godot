@@ -10,12 +10,24 @@ config_version=4
 
 _global_script_classes=[ {
 "base": "Sprite",
+"class": "Card",
+"language": "GDScript",
+"path": "res://Entities/Card/Card.gd"
+}, {
+"base": "Sprite",
 "class": "Player",
 "language": "GDScript",
 "path": "res://Entities/Player/Player.gd"
+}, {
+"base": "Control",
+"class": "StatBarsManager",
+"language": "GDScript",
+"path": "res://Entities/StatBarsManager/StatBarsManager.gd"
 } ]
 _global_script_class_icons={
-"Player": ""
+"Card": "",
+"Player": "",
+"StatBarsManager": ""
 }
 
 [application]

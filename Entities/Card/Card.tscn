@@ -9,6 +9,7 @@ size = 82
 font_data = ExtResource( 2 )
 
 [node name="Card" type="Sprite"]
+position = Vector2( 511, 313 )
 scale = Vector2( 0.77981, 0.652332 )
 texture = ExtResource( 1 )
 script = ExtResource( 3 )
@@ -44,6 +45,5 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[connection signal="update_values" from="." to="." method="_on_Card_update_values"]
 [connection signal="pressed" from="Accept" to="." method="_on_Accept_pressed"]
 [connection signal="pressed" from="Cancel" to="." method="_on_Cancel_pressed"]

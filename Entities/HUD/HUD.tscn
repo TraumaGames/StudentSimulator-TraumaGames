@@ -57,3 +57,5 @@ margin_left = 13.0
 margin_right = 313.0
 margin_bottom = 44.0
 text = "Jugar"
+
+[connection signal="pressed" from="CenterContainer/PanelContainer/VBoxContainer/Buttons/StartButton" to="." method="_on_StartButton_pressed"]

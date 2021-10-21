@@ -5,11 +5,6 @@
 
 [node name="StatBarsManager" type="Control"]
 script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
 
 [node name="HealthBar" parent="." instance=ExtResource( 2 )]
 bar_name = "Salud"
-
-[connection signal="update_bars" from="." to="." method="_on_StatBarsManager_update_bars"]
