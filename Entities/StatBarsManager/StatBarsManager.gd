@@ -1,9 +1,8 @@
 extends Control
-
-signal update_bars
+class_name StatBarsManager
 
 onready var statBars = {"Salud": $HealthBar}
 
-func _on_StatBarsManager_update_bars(stats):
+func update_stats(stats):
 	for stat in stats.keys():
 		statBars[stat].value = stats[stat]

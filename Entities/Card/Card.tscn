@@ -45,6 +45,5 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[connection signal="update_values" from="." to="." method="_on_Card_update_values"]
 [connection signal="pressed" from="Accept" to="." method="_on_Accept_pressed"]
 [connection signal="pressed" from="Cancel" to="." method="_on_Cancel_pressed"]
