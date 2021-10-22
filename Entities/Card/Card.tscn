@@ -27,23 +27,43 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Accept" type="Button" parent="."]
-margin_left = 137.134
-margin_top = 117.731
-margin_right = 222.134
-margin_bottom = 167.731
+[node name="CenterAccept" type="CenterContainer" parent="."]
+margin_left = -306.282
+margin_top = 102.0
+margin_right = -1.28241
+margin_bottom = 180.0
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Cancel" type="Button" parent="."]
-margin_left = -198.748
-margin_top = 118.735
-margin_right = -113.748
-margin_bottom = 168.735
+[node name="Accept" type="Button" parent="CenterAccept"]
+margin_left = 146.0
+margin_top = 14.0
+margin_right = 158.0
+margin_bottom = 64.0
+rect_min_size = Vector2( 0, 50 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[connection signal="pressed" from="Accept" to="." method="_on_Accept_pressed"]
-[connection signal="pressed" from="Cancel" to="." method="_on_Cancel_pressed"]
+[node name="CenterCancel" type="CenterContainer" parent="."]
+margin_left = 2.76724
+margin_top = 102.0
+margin_right = 307.767
+margin_bottom = 180.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Cancel" type="Button" parent="CenterCancel"]
+margin_left = 146.0
+margin_top = 14.0
+margin_right = 158.0
+margin_bottom = 64.0
+rect_min_size = Vector2( 0, 50 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[connection signal="pressed" from="CenterAccept/Accept" to="." method="_on_Accept_pressed"]
+[connection signal="pressed" from="CenterCancel/Cancel" to="." method="_on_Cancel_pressed"]
