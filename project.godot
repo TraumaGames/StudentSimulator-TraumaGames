@@ -14,6 +14,16 @@ _global_script_classes=[ {
 "language": "GDScript",
 "path": "res://Entities/Card/Card.gd"
 }, {
+"base": "Node",
+"class": "CardInformation",
+"language": "GDScript",
+"path": "res://Entities/Card/CardInformation/CardInformation.gd"
+}, {
+"base": "CanvasLayer",
+"class": "HUD",
+"language": "GDScript",
+"path": "res://Entities/HUD/HUD.gd"
+}, {
 "base": "Sprite",
 "class": "Player",
 "language": "GDScript",
@@ -26,6 +36,8 @@ _global_script_classes=[ {
 } ]
 _global_script_class_icons={
 "Card": "",
+"CardInformation": "",
+"HUD": "",
 "Player": "",
 "StatBarsManager": ""
 }

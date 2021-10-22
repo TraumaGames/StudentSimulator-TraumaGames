@@ -1,11 +1,11 @@
 [gd_scene load_steps=5 format=2]
 
-[ext_resource path="res://assets/art/card.PNG" type="Texture" id=1]
+[ext_resource path="res://assets/art/card/card.PNG" type="Texture" id=1]
 [ext_resource path="res://assets/fonts/Billabong-font.ttf" type="DynamicFontData" id=2]
 [ext_resource path="res://Entities/Card/Card.gd" type="Script" id=3]
 
 [sub_resource type="DynamicFont" id=1]
-size = 82
+size = 45
 font_data = ExtResource( 2 )
 
 [node name="Card" type="Sprite"]
@@ -20,9 +20,9 @@ margin_top = -199.0
 margin_right = 282.151
 margin_bottom = 96.0
 custom_fonts/font = SubResource( 1 )
-text = "Dedicate a otra cosa | 
-Na mentira"
+text = "Dedicate a otra cosa | Na mentira"
 align = 1
+autowrap = true
 __meta__ = {
 "_edit_use_anchors_": false
 }

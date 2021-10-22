@@ -1,13 +1,15 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://Entities/HUD/HUD.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Entities/Card/Card.tscn" type="PackedScene" id=2]
 [ext_resource path="res://Main.gd" type="Script" id=3]
 [ext_resource path="res://Entities/Player/Player.tscn" type="PackedScene" id=4]
 [ext_resource path="res://Entities/StatBarsManager/StatBarsManager.tscn" type="PackedScene" id=5]
+[ext_resource path="res://Entities/Card/CardInformation/CardInformation.tscn" type="PackedScene" id=6]
 
 [node name="Main" type="Node"]
 script = ExtResource( 3 )
+cardInformationScene = ExtResource( 6 )
 
 [node name="HUD" parent="." instance=ExtResource( 1 )]
 
@@ -21,11 +23,12 @@ position = Vector2( 867.735, 536.321 )
 [node name="StatBarsManager" parent="." instance=ExtResource( 5 )]
 visible = false
 margin_left = 5.0
-margin_top = 563.0
+margin_top = 528.0
 margin_right = 5.0
-margin_bottom = 563.0
+margin_bottom = 528.0
 
 [node name="Timer" type="Timer" parent="."]
+one_shot = true
 
 [connection signal="start_game" from="HUD" to="." method="_on_HUD_start_game"]
 [connection signal="close_card" from="Card" to="." method="_on_Card_close_card"]
