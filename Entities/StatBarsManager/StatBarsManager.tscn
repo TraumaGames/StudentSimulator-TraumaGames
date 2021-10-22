@@ -1,10 +1,16 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=4 format=2]
 
 [ext_resource path="res://Entities/StatBarsManager/StatBarsManager.gd" type="Script" id=1]
 [ext_resource path="res://Entities/StatBar/StatBar.tscn" type="PackedScene" id=2]
+[ext_resource path="res://healthBarTheme/health_theme.tres" type="Theme" id=3]
 
 [node name="StatBarsManager" type="Control"]
 script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
 [node name="HealthBar" parent="." instance=ExtResource( 2 )]
+theme = ExtResource( 3 )
 bar_name = "Salud"
+value = 50.0

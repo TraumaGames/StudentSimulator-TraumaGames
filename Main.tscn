@@ -20,10 +20,10 @@ position = Vector2( 867.735, 536.321 )
 
 [node name="StatBarsManager" parent="." instance=ExtResource( 5 )]
 visible = false
-margin_left = 5.3454
-margin_top = 563.048
-margin_right = 5.3454
-margin_bottom = 563.048
+margin_left = 5.0
+margin_top = 563.0
+margin_right = 5.0
+margin_bottom = 563.0
 
 [node name="Timer" type="Timer" parent="."]
 
