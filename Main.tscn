@@ -31,8 +31,8 @@ one_shot = true
 
 [node name="CardInformationManager" parent="." instance=ExtResource( 7 )]
 
-[connection signal="reset_game" from="HUD" to="." method="_on_HUD_reset_game"]
-[connection signal="start_game" from="HUD" to="." method="_on_HUD_start_game"]
+[connection signal="reset_game" from="HUD" to="." method="reset_game"]
+[connection signal="start_game" from="HUD" to="." method="start_game"]
 [connection signal="close_card" from="Card" to="." method="_on_Card_close_card"]
 [connection signal="stats_change" from="Player" to="." method="_on_Player_stats_change"]
-[connection signal="timeout" from="CardTimer" to="." method="_on_Timer_timeout"]
+[connection signal="timeout" from="CardTimer" to="." method="_on_CardTimer_timeout"]
