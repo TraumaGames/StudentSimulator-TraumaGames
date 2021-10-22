@@ -12,7 +12,7 @@ func _ready():
 func _set_bar_name(new_name: String):
 	bar_name = new_name
 	if barName != null:
-		barName.text = new_name
+		barName.text = bar_name
 
 func _get_bar_name():
 	return bar_name
@@ -20,7 +20,7 @@ func _get_bar_name():
 func _set_value(new_value: float):
 	value = new_value
 	if barName != null:
-		bar.value = new_value
+		bar.value = value
 
 func _get_value():
 	return value

@@ -2,24 +2,34 @@ extends Sprite
 class_name Card
 
 signal close_card
+signal game_finished
 
 onready var label: Label = $Text
 onready var buttonAccept: Button = $Accept
 onready var buttonCancel: Button = $Cancel
-var stats_update_accept = {}
-var stats_update_cancel = {}
+var card_information: CardInformation
 
-func update_values(text, textAccept, textCancel, stats_accept, stats_cancel):
+func set_information(information: CardInformation):
+	card_information = information
+	if information != null:
+		update_values(information.text, information.textAccept, information.textCancel)
+	else:
+		emit_signal("game_finished")
+
+func update_values(text, textAccept, textCancel):
 	label.text = text
 	buttonAccept.text = textAccept
 	buttonCancel.text = textCancel
-	stats_update_accept = stats_accept
-	stats_update_cancel = stats_cancel
 
 func _on_Accept_pressed():
 	self.hide()
-	emit_signal("close_card", stats_update_accept)
+	var old_information = card_information
+	set_information(card_information.next_card_accept)
+	emit_signal("close_card", old_information.stats_accept)
 
 func _on_Cancel_pressed():
 	self.hide()
-	emit_signal("close_card", stats_update_cancel)
+	var old_information = card_information
+	set_information(card_information.next_card_cancel)
+	emit_signal("close_card", old_information.stats_cancel)
+		

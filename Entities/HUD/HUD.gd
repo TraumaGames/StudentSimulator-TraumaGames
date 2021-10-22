@@ -1,8 +1,10 @@
 extends CanvasLayer
+class_name HUD
 
 signal start_game
 
 onready var hud_container: Node = $CenterContainer
+onready var wait_label: Node = $WaitLabel
 
 func _ready():
 	pass	
@@ -14,3 +16,9 @@ func _ready():
 func _on_StartButton_pressed():
 	hud_container.hide()
 	emit_signal("start_game")
+
+func wait():
+	wait_label.show()
+
+func stop_wait():
+	wait_label.hide()
