@@ -62,17 +62,23 @@ margin_right = 313.0
 margin_bottom = 44.0
 text = "Jugar"
 
-[node name="WaitLabel" type="Label" parent="."]
+[node name="MessageLabel" type="Label" parent="."]
 visible = false
-margin_left = 342.243
-margin_top = 39.0
-margin_right = 682.243
-margin_bottom = 93.0
+margin_left = 299.302
+margin_top = 9.20811
+margin_right = 721.302
+margin_bottom = 99.2081
 custom_fonts/font = SubResource( 2 )
 text = "..."
 align = 1
+autowrap = true
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
+[node name="GameOverMessageTimer" type="Timer" parent="."]
+wait_time = 5.0
+one_shot = true
+
 [connection signal="pressed" from="CenterContainer/PanelContainer/VBoxContainer/Buttons/StartButton" to="." method="_on_StartButton_pressed"]
+[connection signal="timeout" from="GameOverMessageTimer" to="." method="_on_GameOverMessageTimer_timeout"]

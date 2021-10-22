@@ -17,6 +17,14 @@ func initialize(statBarsManager):
 	self.statBarsManager = statBarsManager
 	emit_signal("stats_change", stats)
 
+func reset_values():
+	stats = {
+		"Salud": 100,
+		"Ejercicios": 0
+	}
+	texture = texture_1
+	emit_signal("stats_change", stats)
+
 func _update_texture():
 	if texture == texture_1:
 		texture = texture_2

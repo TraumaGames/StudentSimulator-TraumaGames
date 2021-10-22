@@ -8,12 +8,9 @@ onready var stat_bars_manager: StatBarsManager = $StatBarsManager
 onready var timer :Timer =$Timer
 var cards: Array = []
 
-var index = 0 
-
 func _ready():
-	create_cards()
-	card.set_information(cards[0])
-	player.initialize(stat_bars_manager)
+	_create_cards()
+	_set_initial_state()
 
 func _on_HUD_start_game():
 	hud.wait()
@@ -26,11 +23,13 @@ func _on_Card_close_card(stats_update):
 	if card.card_information != null:
 		hud.wait()
 		timer.start()
+	else:
+		finish_game()
 
 func _on_Player_stats_change(stats):
 	stat_bars_manager.update_stats(stats)
 
-func create_cards():
+func _create_cards():
 	for i in range(5):
 		cards.append(cardInformationScene.instance())
 	cards[0].initialize("Estás en etapas de full parciales, tenés que prepararte para Matemática 2, pero te llamaron a salir un rato a la plaza ¿Cuál es tu decisión?", "Salir a despejarme", "Seguir estudiando", {"Ejercicios": 0}, {"Ejercicios": +50}, cards[1], cards[2])
@@ -45,3 +44,24 @@ func create_cards():
 func _on_Timer_timeout():
 	card.show()
 	hud.stop_wait()
+
+func _get_game_over_message():
+	if player.stats["Ejercicios"] == 100:
+		return "Terminaste en el neuropsiquiátrico, pero aprobaste con 10"
+	else:
+		return "Te conseguiste alta wacha, pero te dejó porque no tenés futuro académico"
+
+func finish_game():
+	hud.game_over(_get_game_over_message())
+
+func _set_initial_state():
+	player.hide()
+	stat_bars_manager.hide()
+	player.initialize(stat_bars_manager)
+	player.reset_values()
+	card.set_information(cards[0])
+
+func _on_HUD_reset_game():
+	_set_initial_state()
+	
+	

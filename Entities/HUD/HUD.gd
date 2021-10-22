@@ -2,23 +2,29 @@ extends CanvasLayer
 class_name HUD
 
 signal start_game
+signal reset_game
 
 onready var hud_container: Node = $CenterContainer
-onready var wait_label: Node = $WaitLabel
+onready var message_label: Node = $MessageLabel
+onready var game_over_message_timer: Timer = $GameOverMessageTimer
 
-func _ready():
-	pass	
-	#$CenterContainer/PanelContainer/VBoxContainer/Card.initialize($CenterContainer/PanelContainer/VBoxContainer/Player)
-	#$CenterContainer/PanelContainer/VBoxContainer/Player.initialize($StatBarsManager)
-	#$CenterContainer/PanelContainer/VBoxContainer/Card.emit_signal("update_values", "Hola mundo", "Aceptar", "Rechazar", {"Salud": -50}, {"Salud": -10})
-
+func game_over(message: String):
+	message_label.text = message
+	message_label.show()
+	game_over_message_timer.start()
 
 func _on_StartButton_pressed():
 	hud_container.hide()
 	emit_signal("start_game")
 
 func wait():
-	wait_label.show()
+	message_label.text = "..."
+	message_label.show()
 
 func stop_wait():
-	wait_label.hide()
+	message_label.hide()
+
+func _on_GameOverMessageTimer_timeout():
+	message_label.hide()
+	emit_signal("reset_game")
+	hud_container.show()

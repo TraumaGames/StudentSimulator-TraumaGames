@@ -2,7 +2,6 @@ extends Sprite
 class_name Card
 
 signal close_card
-signal game_finished
 
 onready var label: Label = $Text
 onready var buttonAccept: Button = $Accept
@@ -13,8 +12,6 @@ func set_information(information: CardInformation):
 	card_information = information
 	if information != null:
 		update_values(information.text, information.textAccept, information.textCancel)
-	else:
-		emit_signal("game_finished")
 
 func update_values(text, textAccept, textCancel):
 	label.text = text

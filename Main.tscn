@@ -30,6 +30,7 @@ margin_bottom = 528.0
 [node name="Timer" type="Timer" parent="."]
 one_shot = true
 
+[connection signal="reset_game" from="HUD" to="." method="_on_HUD_reset_game"]
 [connection signal="start_game" from="HUD" to="." method="_on_HUD_start_game"]
 [connection signal="close_card" from="Card" to="." method="_on_Card_close_card"]
 [connection signal="stats_change" from="Player" to="." method="_on_Player_stats_change"]
