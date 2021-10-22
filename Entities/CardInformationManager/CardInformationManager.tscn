@@ -1,0 +1,8 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Entities/CardInformationManager/CardInformationManager.gd" type="Script" id=1]
+[ext_resource path="res://Entities/Card/CardInformation/CardInformation.tscn" type="PackedScene" id=2]
+
+[node name="CardInformationManager" type="Node"]
+script = ExtResource( 1 )
+cardInformationScene = ExtResource( 2 )

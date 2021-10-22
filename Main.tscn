@@ -5,11 +5,10 @@
 [ext_resource path="res://Main.gd" type="Script" id=3]
 [ext_resource path="res://Entities/Player/Player.tscn" type="PackedScene" id=4]
 [ext_resource path="res://Entities/StatBarsManager/StatBarsManager.tscn" type="PackedScene" id=5]
-[ext_resource path="res://Entities/Card/CardInformation/CardInformation.tscn" type="PackedScene" id=6]
+[ext_resource path="res://Entities/CardInformationManager/CardInformationManager.tscn" type="PackedScene" id=7]
 
 [node name="Main" type="Node"]
 script = ExtResource( 3 )
-cardInformationScene = ExtResource( 6 )
 
 [node name="HUD" parent="." instance=ExtResource( 1 )]
 
@@ -29,6 +28,8 @@ margin_bottom = 559.784
 
 [node name="CardTimer" type="Timer" parent="."]
 one_shot = true
+
+[node name="CardInformationManager" parent="." instance=ExtResource( 7 )]
 
 [connection signal="reset_game" from="HUD" to="." method="_on_HUD_reset_game"]
 [connection signal="start_game" from="HUD" to="." method="_on_HUD_start_game"]
