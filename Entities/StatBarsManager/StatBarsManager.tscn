@@ -11,11 +11,12 @@ __meta__ = {
 }
 
 [node name="HealthBar" parent="." instance=ExtResource( 2 )]
+visible = false
 theme = ExtResource( 3 )
 bar_name = "Salud"
 value = 50.0
 
 [node name="ExercisesBar" parent="." instance=ExtResource( 2 )]
-margin_top = 36.0
-margin_bottom = 50.0
+margin_top = 4.0
+margin_bottom = 18.0
 bar_name = "Ejercicios resueltos"

@@ -8,18 +8,15 @@ export var texture_2: Texture
 
 var statBarsManager
 
-var stats = {
-	"Salud": 100,
-	"Ejercicios": 0
-	}
+var stats: Dictionary
 
 func initialize(statBarsManager):
 	self.statBarsManager = statBarsManager
-	emit_signal("stats_change", stats)
+	reset_values()
 
 func reset_values():
 	stats = {
-		"Salud": 100,
+#		"Salud": 100,
 		"Ejercicios": 0
 	}
 	texture = texture_1

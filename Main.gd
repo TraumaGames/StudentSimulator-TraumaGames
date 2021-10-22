@@ -5,7 +5,7 @@ onready var hud: HUD = $HUD
 onready var card: Card = $Card
 onready var player: Player = $Player
 onready var stat_bars_manager: StatBarsManager = $StatBarsManager
-onready var timer :Timer =$Timer
+onready var card_timer :Timer =$CardTimer
 var cards: Array = []
 
 func _ready():
@@ -16,13 +16,13 @@ func _on_HUD_start_game():
 	hud.wait()
 	player.show()
 	stat_bars_manager.show()
-	timer.start()
+	card_timer.start()
 
 func _on_Card_close_card(stats_update):
 	player.update_stats(stats_update)
 	if card.card_information != null:
 		hud.wait()
-		timer.start()
+		card_timer.start()
 	else:
 		finish_game()
 
