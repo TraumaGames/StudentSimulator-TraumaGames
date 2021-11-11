@@ -1,8 +1,79 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=4 format=2]
 
 [ext_resource path="res://Entities/CardInformationManager/CardInformationManager.gd" type="Script" id=1]
 [ext_resource path="res://Entities/Card/CardInformation/CardInformation.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Entities/Card/CardInformation/CardInformation.gd" type="Script" id=3]
 
 [node name="CardInformationManager" type="Node"]
 script = ExtResource( 1 )
 cardInformationScene = ExtResource( 2 )
+
+[node name="CardInformation" type="Node" parent="."]
+script = ExtResource( 3 )
+text = "Estás en etapas de full parciales, tenés que prepararte para Matemática 2, pero te llamaron a salir un rato a la plaza ¿Cuál es tu decisión?"
+textAccept = "Salir a despejarme"
+textCancel = "Seguir estudiando"
+stats_accept = {
+"Ejercicios": 0
+}
+stats_cancel = {
+"Ejercicios": 50
+}
+next_card_index_accept = 1
+next_card_index_cancel = 2
+
+[node name="CardInformation2" type="Node" parent="."]
+script = ExtResource( 3 )
+text = "Elegiste salir un rato y volver a retomar, pero te invitaron a ir a Birgarden a tomar un par de birras, ¿Cuál es tu decisión?"
+textAccept = "Irse de gira"
+textCancel = "Meterle al estudio"
+stats_accept = {
+"Ejercicios": 0
+}
+stats_cancel = {
+"Ejercicios": 75
+}
+next_card_index_accept = 3
+next_card_index_cancel = 4
+
+[node name="CardInformation3" type="Node" parent="."]
+script = ExtResource( 3 )
+text = "Practicaste 2 de 4 ejercicios, agarrás tu celular y te volvieron a invitar, pero a Birgarden a tomar un par de birras un rato, ¿Cuál es tu decisión?"
+textAccept = "Irse de gira"
+textCancel = "Meterle al estudio"
+stats_accept = {
+"Ejercicios": 0
+}
+stats_cancel = {
+"Ejercicios": 25
+}
+next_card_index_accept = 3
+next_card_index_cancel = 4
+
+[node name="CardInformation4" type="Node" parent="."]
+script = ExtResource( 3 )
+text = "Ya estás alegre, y no queres parar, pero estas a tiempo de volver, ¿Cuál es tu decisión?"
+textAccept = "Escabiar hasta desfallecer"
+textCancel = "Estudiar hasta desfallecer"
+stats_accept = {
+"Ejercicios": 0
+}
+stats_cancel = {
+"Ejercicios": 25
+}
+next_card_index_accept = -1
+next_card_index_cancel = -1
+
+[node name="CardInformation5" type="Node" parent="."]
+script = ExtResource( 3 )
+text = "Ya practicaste 3 de 4 ejercicios, pero que tus amigos te insisten una vez más, ¿Cuál es tu decisión?"
+textAccept = "Ortivarte"
+textCancel = "Dártela en la pera"
+stats_accept = {
+"Ejercicios": 25
+}
+stats_cancel = {
+"Ejercicios": 0
+}
+next_card_index_accept = -1
+next_card_index_cancel = 3

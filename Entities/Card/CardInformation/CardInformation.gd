@@ -3,11 +3,13 @@ class_name CardInformation
 
 var next_card_accept: CardInformation
 var next_card_cancel: CardInformation
-var text: String
-var textAccept: String
-var textCancel: String
-var stats_accept: Dictionary = {}
-var stats_cancel: Dictionary = {}
+export var text: String
+export var textAccept: String
+export var textCancel: String
+export var stats_accept: Dictionary = {}
+export var stats_cancel: Dictionary = {}
+export var next_card_index_accept: int = 0
+export var next_card_index_cancel: int = 0
 
 func initialize(text, textAccept, textCancel, statsAccept, statsCancel, card_accept: CardInformation=null, card_cancel: CardInformation=null):
 	self.text = text
