@@ -1,12 +1,12 @@
 [gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://assets/art/card/card.PNG" type="Texture" id=1]
-[ext_resource path="res://assets/fonts/Billabong-font.ttf" type="DynamicFontData" id=2]
+[ext_resource path="res://assets/fonts/Roboto-Regular.ttf" type="DynamicFontData" id=2]
 [ext_resource path="res://Entities/Card/Card.gd" type="Script" id=3]
 [ext_resource path="res://Entities/MenuButton/MenuButton.tscn" type="PackedScene" id=4]
 
 [sub_resource type="DynamicFont" id=1]
-size = 45
+size = 32
 font_data = ExtResource( 2 )
 
 [node name="Card" type="Sprite"]
@@ -20,8 +20,8 @@ margin_left = -276.849
 margin_top = -199.0
 margin_right = 282.151
 margin_bottom = 96.0
+custom_colors/font_color = Color( 0.0431373, 0.0823529, 0.0156863, 1 )
 custom_fonts/font = SubResource( 1 )
-custom_colors/font_color = Color( 0.270588, 0.470588, 0.117647, 1 )
 text = "Dedicate a otra cosa | Na mentira"
 align = 1
 autowrap = true
