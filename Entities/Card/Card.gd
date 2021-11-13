@@ -21,11 +21,11 @@ func update_values(text, textAccept, textCancel):
 func _on_Accept_pressed():
 	self.hide()
 	var old_information = card_information
-	set_information(card_information.next_card_accept())
+	set_information(card_information.next_card_accept({"tags": [], "stats": {}}))
 	emit_signal("close_card", old_information.stats_accept)
 
 func _on_Cancel_pressed():
 	self.hide()
 	var old_information = card_information
-	set_information(card_information.next_card_cancel())
+	set_information(card_information.next_card_cancel({"tags": [], "stats": {}}))
 	emit_signal("close_card", old_information.stats_cancel)
