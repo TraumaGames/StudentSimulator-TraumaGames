@@ -19,13 +19,18 @@ func update_values(text, textAccept, textCancel):
 	buttonCancel.text = textCancel
 
 func _on_Accept_pressed():
-	self.hide()
-	var old_information = card_information
-	set_information(card_information.next_card_accept({"tags": [], "stats": {}}))
-	emit_signal("close_card", old_information.stats_accept)
+	card_information.accept()
+	_on_select(card_information.stats_accept)
 
 func _on_Cancel_pressed():
+	card_information.cancel()
+	_on_select(card_information.stats_cancel)
+
+func _on_select(stats_select):
 	self.hide()
+	emit_signal("close_card", stats_select)
+
+func set_next_information(state):
 	var old_information = card_information
-	set_information(card_information.next_card_cancel({"tags": [], "stats": {}}))
-	emit_signal("close_card", old_information.stats_cancel)
+	set_information(card_information.next_card(state))
+	old_information.reset()

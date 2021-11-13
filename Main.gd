@@ -23,6 +23,7 @@ func finish_game():
 	hud.game_over(player)
 
 func _on_Card_close_card(stats_update):
+	card.set_next_information({"tags": [], "stats": player.stats})
 	player.update_stats(stats_update)
 	if card.card_information != null:
 		hud.wait()

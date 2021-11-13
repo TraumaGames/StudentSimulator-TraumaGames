@@ -12,17 +12,23 @@ export var next_card_index_cancel: int = 0
 export var upper_stats: Dictionary = {}
 export var lower_stats: Dictionary = {}
 export var tags: Array = []
+var next_card_index = -1
 
+func accept():
+	next_card_index = next_card_index_accept
+
+func cancel():
+	next_card_index = next_card_index_cancel
+
+func reset():
+	next_card_index = -1
 
 func set_parent(parent):
 	self.parent = parent
 
-func next_card_accept(state):
-	return parent.cards[next_card_index_accept] if(next_card_index_accept >= 0) else null
+func next_card(state):
+	return parent.cards[next_card_index] if(next_card_index >= 0) else null
 
-func next_card_cancel(state):
-	return parent.cards[next_card_index_cancel] if(next_card_index_cancel >= 0) else null
-	
 func contains_tags(tags: Array):
 	var contains = true
 	for tag in tags:
