@@ -2,6 +2,7 @@ extends Node
 
 onready var card_information_manager: CardInformationManager = $CardInformationManager
 onready var card_manager: CardManager = $CardManager
+onready var tag_manager: TagManager = $TagManager
 onready var stat_manager: StatManager = $StatManager
 onready var hud: HUD = $HUD
 onready var card = $Card
@@ -32,7 +33,7 @@ func _set_initial_state():
 	player.hide()
 	stat_bars_manager.hide()
 	card_manager.hide()
-	card_manager.initialize(stat_manager, card_information_manager)
+	card_manager.initialize(tag_manager, stat_manager, card_information_manager)
 	stat_manager.reset()
 	card_manager.reset()
 
