@@ -43,3 +43,6 @@ func _verify_compare_stats(stats, compare_stats, upper=true):
 	for stat in compare_stats.keys():
 		verify = verify && (stats[stat] > compare_stats[stat] if upper else stats[stat] < compare_stats[stat])
 	return verify
+	
+func card_type():
+	return CardManager.BINARY_CARD

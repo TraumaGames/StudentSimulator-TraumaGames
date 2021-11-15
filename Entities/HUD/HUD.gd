@@ -9,8 +9,8 @@ onready var message_label: Node = $MessageLabel
 onready var game_over_message_timer: Timer = $GameOverMessageTimer
 onready var message_manager: MessageManager =$MessageManager
 
-func game_over(player: Player):
-	message_label.text = message_manager.game_over_message(player)
+func game_over(state: Dictionary):
+	message_label.text = message_manager.game_over_message(state)
 	message_label.show()
 	game_over_message_timer.start()
 

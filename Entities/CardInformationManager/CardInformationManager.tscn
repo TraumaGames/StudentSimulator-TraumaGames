@@ -14,10 +14,10 @@ text = "Estás en etapas de full parciales, tenés que prepararte para Matemáti
 textAccept = "Salir a despejarme"
 textCancel = "Seguir estudiando"
 stats_accept = {
-"Ejercicios": 0
+3: 0
 }
 stats_cancel = {
-"Ejercicios": 50
+3: 50
 }
 next_card_index_accept = 1
 next_card_index_cancel = 2
@@ -28,10 +28,10 @@ text = "Elegiste salir un rato y volver a retomar, pero te invitaron a ir a Birg
 textAccept = "Irse de gira"
 textCancel = "Meterle al estudio"
 stats_accept = {
-"Ejercicios": 0
+3: 0
 }
 stats_cancel = {
-"Ejercicios": 75
+3: 75
 }
 next_card_index_accept = 3
 next_card_index_cancel = 4
@@ -42,10 +42,10 @@ text = "Practicaste 2 de 4 ejercicios, agarrás tu celular y te volvieron a invi
 textAccept = "Irse de gira"
 textCancel = "Meterle al estudio"
 stats_accept = {
-"Ejercicios": 0
+3: 0
 }
 stats_cancel = {
-"Ejercicios": 25
+3: 25
 }
 next_card_index_accept = 3
 next_card_index_cancel = 4
@@ -56,10 +56,10 @@ text = "Ya estás alegre, y no queres parar, pero estas a tiempo de volver, ¿Cu
 textAccept = "Escabiar hasta desfallecer"
 textCancel = "Estudiar hasta desfallecer"
 stats_accept = {
-"Ejercicios": 0
+3: 0
 }
 stats_cancel = {
-"Ejercicios": 25
+3: 25
 }
 next_card_index_accept = -1
 next_card_index_cancel = -1
@@ -70,10 +70,10 @@ text = "Ya practicaste 3 de 4 ejercicios, pero que tus amigos te insisten una ve
 textAccept = "Ortivarte"
 textCancel = "Dártela en la pera"
 stats_accept = {
-"Ejercicios": 25
+3: 25
 }
 stats_cancel = {
-"Ejercicios": 0
+3: 0
 }
 next_card_index_accept = -1
 next_card_index_cancel = 3

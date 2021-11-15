@@ -24,6 +24,11 @@ _global_script_classes=[ {
 "language": "GDScript",
 "path": "res://Entities/CardInformationManager/CardInformationManager.gd"
 }, {
+"base": "Control",
+"class": "CardManager",
+"language": "GDScript",
+"path": "res://Entities/CardManager/CardManager.gd"
+}, {
 "base": "CanvasLayer",
 "class": "HUD",
 "language": "GDScript",
@@ -43,15 +48,22 @@ _global_script_classes=[ {
 "class": "StatBarsManager",
 "language": "GDScript",
 "path": "res://Entities/StatBarsManager/StatBarsManager.gd"
+}, {
+"base": "Node",
+"class": "StatManager",
+"language": "GDScript",
+"path": "res://Entities/StatManager/StatManager.gd"
 } ]
 _global_script_class_icons={
 "Card": "",
 "CardInformation": "",
 "CardInformationManager": "",
+"CardManager": "",
 "HUD": "",
 "MessageManager": "",
 "Player": "",
-"StatBarsManager": ""
+"StatBarsManager": "",
+"StatManager": ""
 }
 
 [application]

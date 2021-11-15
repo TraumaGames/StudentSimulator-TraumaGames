@@ -1,14 +1,14 @@
 extends Control
 class_name Card
 
-signal close_card
+signal close_card(stats_select)
 
 onready var label: Label = $Text
 onready var buttonAccept: Button = $CenterAccept/Accept
 onready var buttonCancel: Button = $CenterCancel/Cancel
-var card_information: CardInformation
+var card_information
 
-func set_information(information: CardInformation):
+func set_information(information):
 	card_information = information
 	if information != null:
 		update_values(information.text, information.textAccept, information.textCancel)
@@ -34,3 +34,6 @@ func set_next_information(state):
 	var old_information = card_information
 	set_information(card_information.next_card(state))
 	old_information.reset()
+	
+func get_type():
+	return CardManager.BINARY_CARD
