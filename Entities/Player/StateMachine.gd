@@ -14,9 +14,14 @@ func _ready():
 		"blocked": $Blocked
 	}
 
-func notify_stats_updated(stats):
-	if(stats[3] == 100):
-		var parent = self.get_parent()
-		parent.texture = parent.texture_2
-	#for stat in stats.keys():
-	#	print(stats[stat])
+
+
+func update(stats):
+	
+	if(stats[StatManager.Stats.EXERCISES] == 100):
+		print("if")
+		current_state.emit_signal("finished", "tired")
+	#elif stats[StatManager.Stats.MENTAL_HEALTH] == 0:
+	#	emit_signal("finished", "insane")
+	else:
+		emit_signal("finished", "neutral")

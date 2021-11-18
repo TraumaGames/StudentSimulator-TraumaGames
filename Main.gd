@@ -40,7 +40,7 @@ func _set_initial_state():
 
 func _on_StatManager_stats_change(stats):
 	stat_bars_manager.update_stats(stats)
-	player._update_texture(stats)
+	player.update_stats(stats)
 
 
 func _on_CardManager_close_card(stats_update):

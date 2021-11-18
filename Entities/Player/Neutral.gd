@@ -1,10 +1,12 @@
 extends AbstractState
 
-func _enter():
-	pass
+func enter():
+	.enter()
 
 func update(value):
-	pass
+	var stats = parent.stats()
+	get_parent().update(stats)
+	
 
 func handle_input(event):
 	pass

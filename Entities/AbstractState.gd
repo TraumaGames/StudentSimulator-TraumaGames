@@ -6,6 +6,8 @@ and makes sure every State object had all of these methods.
 extends Node
 class_name AbstractState
 
+export var texture: Texture
+
 var parent
 
 
@@ -13,6 +15,7 @@ signal finished(next_state_name)
 
 # Initialize the state. E.g. change the animation
 func enter():
+	parent.texture = self.texture
 	return
 
 # Clean up the state. Reinitialize values like a timer
