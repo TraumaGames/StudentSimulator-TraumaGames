@@ -9,6 +9,16 @@
 config_version=4
 
 _global_script_classes=[ {
+"base": "Node",
+"class": "AbstractState",
+"language": "GDScript",
+"path": "res://Entities/AbstractState.gd"
+}, {
+"base": "Node",
+"class": "AbstractStateMachine",
+"language": "GDScript",
+"path": "res://Entities/AbstractStateMachine.gd"
+}, {
 "base": "Sprite",
 "class": "Card",
 "language": "GDScript",
@@ -45,6 +55,8 @@ _global_script_classes=[ {
 "path": "res://Entities/StatBarsManager/StatBarsManager.gd"
 } ]
 _global_script_class_icons={
+"AbstractState": "",
+"AbstractStateMachine": "",
 "Card": "",
 "CardInformation": "",
 "CardInformationManager": "",
