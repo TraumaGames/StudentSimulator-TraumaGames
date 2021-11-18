@@ -1,11 +1,17 @@
-extends "res://entities/AbstractStateMachine.gd"
-
-extends Node
+extends AbstractStateMachine
 
 func _ready():
 	states_map = {
 		"tired": $Tired,
-		"sleeping": $Sleeping
-		"depressed": $Depressed
-		""
+		"rested": $Rested,
+		"sleeping": $Sleeping,
+		"confused": $Confused,
+		"calm": $Calm,
+		"insane": $Insane,
+		"depressed": $Depressed,
+		"happy": $Happy,
+		"blocked": $Blocked
 	}
+
+##func notify_stat_change():
+

@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Entities/CardManager/CardManager.gd" type="Script" id=1]
+[ext_resource path="res://Entities/Card/Card.tscn" type="PackedScene" id=2]
+
+[node name="CardManager" type="Control"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Card" parent="." instance=ExtResource( 2 )]
+
+[connection signal="close_card" from="Card" to="." method="_on_Card_close_card"]

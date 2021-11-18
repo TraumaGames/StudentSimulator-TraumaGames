@@ -19,6 +19,11 @@ _global_script_classes=[ {
 "language": "GDScript",
 "path": "res://Entities/AbstractStateMachine.gd"
 }, {
+"base": "Node",
+"class": "AbstractTagRule",
+"language": "GDScript",
+"path": "res://Entities/TagManager/AbstractTagRule.gd"
+}, {
 "base": "Sprite",
 "class": "Card",
 "language": "GDScript",
@@ -33,6 +38,11 @@ _global_script_classes=[ {
 "class": "CardInformationManager",
 "language": "GDScript",
 "path": "res://Entities/CardInformationManager/CardInformationManager.gd"
+}, {
+"base": "Control",
+"class": "CardManager",
+"language": "GDScript",
+"path": "res://Entities/CardManager/CardManager.gd"
 }, {
 "base": "CanvasLayer",
 "class": "HUD",
@@ -53,17 +63,31 @@ _global_script_classes=[ {
 "class": "StatBarsManager",
 "language": "GDScript",
 "path": "res://Entities/StatBarsManager/StatBarsManager.gd"
+}, {
+"base": "Node",
+"class": "StatManager",
+"language": "GDScript",
+"path": "res://Entities/StatManager/StatManager.gd"
+}, {
+"base": "Node",
+"class": "TagManager",
+"language": "GDScript",
+"path": "res://Entities/TagManager/TagManager.gd"
 } ]
 _global_script_class_icons={
 "AbstractState": "",
 "AbstractStateMachine": "",
+"AbstractTagRule": "",
 "Card": "",
 "CardInformation": "",
 "CardInformationManager": "",
+"CardManager": "",
 "HUD": "",
 "MessageManager": "",
 "Player": "",
-"StatBarsManager": ""
+"StatBarsManager": "",
+"StatManager": "",
+"TagManager": ""
 }
 
 [application]

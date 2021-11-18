@@ -3,9 +3,10 @@ class_name StatBarsManager
 
 onready var statBars = {
 #	"Salud": $HealthBar,
-	"Ejercicios": $ExercisesBar
+	StatManager.Stats.EXERCISES: $ExercisesBar
 	}
 
+
 func update_stats(stats):
-	for stat in stats.keys():
+	for stat in statBars.keys():
 		statBars[stat].value = stats[stat]
