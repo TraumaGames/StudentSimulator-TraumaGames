@@ -29,8 +29,8 @@ margin_left = -276.849
 margin_top = -188.0
 margin_right = 282.151
 margin_bottom = 107.0
-custom_fonts/font = SubResource( 1 )
 custom_colors/font_color = Color( 0.0431373, 0.0823529, 0.0156863, 1 )
+custom_fonts/font = SubResource( 1 )
 text = "Dedicate a otra cosa | Na mentira"
 align = 1
 autowrap = true
@@ -48,10 +48,10 @@ __meta__ = {
 }
 
 [node name="Accept" parent="CenterAccept" instance=ExtResource( 4 )]
-margin_left = 26.0
-margin_top = 8.0
-margin_right = 277.0
-margin_bottom = 70.0
+margin_left = 52.0
+margin_top = 14.0
+margin_right = 252.0
+margin_bottom = 64.0
 rect_min_size = Vector2( 200, 50 )
 size_flags_vertical = 6
 
@@ -65,10 +65,10 @@ __meta__ = {
 }
 
 [node name="Cancel" parent="CenterCancel" instance=ExtResource( 4 )]
-margin_left = 26.0
-margin_top = 8.0
-margin_right = 277.0
-margin_bottom = 70.0
+margin_left = 52.0
+margin_top = 14.0
+margin_right = 252.0
+margin_bottom = 64.0
 rect_min_size = Vector2( 200, 50 )
 
 [connection signal="pressed" from="CenterAccept/Accept" to="." method="_on_Accept_pressed"]
