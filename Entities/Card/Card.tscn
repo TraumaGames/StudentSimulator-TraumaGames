@@ -70,6 +70,7 @@ margin_top = 14.0
 margin_right = 252.0
 margin_bottom = 64.0
 rect_min_size = Vector2( 200, 50 )
+text = ""
 
 [connection signal="pressed" from="CenterAccept/Accept" to="." method="_on_Accept_pressed"]
 [connection signal="pressed" from="CenterCancel/Cancel" to="." method="_on_Cancel_pressed"]
