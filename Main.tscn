@@ -35,8 +35,7 @@ visible = false
 visible = false
 
 [node name="Player" parent="." instance=ExtResource( 4 )]
-visible = false
-position = Vector2( 867.735, 536.321 )
+position = Vector2( 867.735, 499.321 )
 
 [node name="StatBarsManager" parent="." instance=ExtResource( 5 )]
 visible = false

@@ -56,6 +56,7 @@ text = "Ya estás alegre, y no queres parar, pero estas a tiempo de volver, ¿Cu
 textAccept = "Escabiar hasta desfallecer"
 textCancel = "Estudiar hasta desfallecer"
 stats_accept = {
+2: -100,
 3: 0
 }
 stats_cancel = {
