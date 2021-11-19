@@ -5,5 +5,4 @@ func enter():
 
 func update(value):
 	var stats = parent.stats()
-	if(stats[StatManager.Stats.EXERCISES] == 0):
-		emit_signal("finished", "neutral")
+	get_parent().update(stats)
