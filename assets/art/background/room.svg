@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="233.98mm"
+   height="144.90199mm"
+   viewBox="0 0 233.97999 144.90199"
+   version="1.1"
+   id="svg5"
+   sodipodi:docname="room.svg"
+   inkscape:version="1.1.1 (3bf5ae0d25, 2021-09-20)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#505050"
+     bordercolor="#ffffff"
+     borderopacity="1"
+     inkscape:pageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="false"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:snap-global="false"
+     showguides="true"
+     inkscape:guide-bbox="true"
+     inkscape:zoom="0.43852551"
+     inkscape:cx="132.26141"
+     inkscape:cy="475.45695"
+     inkscape:window-width="1366"
+     inkscape:window-height="708"
+     inkscape:window-x="0"
+     inkscape:window-y="32"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs2" />
+  <g
+     inkscape:label="Capa 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <g
+       id="g17143">
+      <g
+         id="g17053">
+        <g
+           id="g16792"
+           inkscape:export-filename="/home/adrian/Documentos/room.png"
+           inkscape:export-xdpi="96"
+           inkscape:export-ydpi="96"
+           transform="translate(5.109473)">
+          <g
+             id="g5789"
+             transform="matrix(1.0000001,0,0,0.99767308,12.319247,-91.251583)"
+             style="fill:#666666">
+            <path
+               style="fill:#666666;stroke-width:0.491287"
+               d="m -17.428718,91.67944 233.847688,-3e-5 -54.09768,27.19943 -125.652327,3e-5 z"
+               id="path2439"
+               sodipodi:nodetypes="ccccc" />
+          </g>
+          <path
+             style="fill:#b3b3b3;stroke-width:0.492628"
+             d="m 48.944204,98.553012 0.04401,-71.20235 125.652346,-3e-5 0.22054,71.2188 z"
+             id="path2252"
+             sodipodi:nodetypes="ccccc" />
+          <path
+             style="fill:#4d4d4d;stroke-width:0.498861"
+             d="m -5.109473,0.214527 54.097687,27.136135 -0.04401,71.20235 -53.7414977,28.169508 z"
+             id="path2552"
+             sodipodi:nodetypes="ccccc" />
+          <path
+             style="fill:#cccccc;stroke:#cccccc;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+             d="m 174.85205,98.553032 53.7217,31.920228 0.16449,-130.258763 -54.09768,27.136135 z"
+             id="path9010"
+             sodipodi:nodetypes="ccccc" />
+          <path
+             style="fill:#e6e6e6;stroke:#e6e6e6;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+             d="M 48.924495,98.587142 -4.7972937,126.72252 v 18.04677 l 233.3908437,2e-5 -0.0198,-14.29605 -53.7217,-31.920228 z"
+             id="path10485"
+             sodipodi:nodetypes="ccccccc" />
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
