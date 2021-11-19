@@ -4,8 +4,8 @@ class_name Card
 signal close_card(stats_select)
 
 onready var label: Label = $Text
-onready var buttonAccept: Button = $CenterAccept/Accept
-onready var buttonCancel: Button = $CenterCancel/Cancel
+onready var buttonAccept: TextureButton = $CenterAccept/Accept
+onready var buttonCancel: TextureButton = $CenterCancel/Cancel
 var card_information
 
 func set_information(information):

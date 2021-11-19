@@ -1,6 +1,6 @@
 [gd_scene load_steps=6 format=2]
 
-[ext_resource path="res://assets/art/card/card.PNG" type="Texture" id=1]
+[ext_resource path="res://assets/art/card/card.svg" type="Texture" id=1]
 [ext_resource path="res://assets/fonts/Roboto-Regular.ttf" type="DynamicFontData" id=2]
 [ext_resource path="res://Entities/Card/Card.gd" type="Script" id=3]
 [ext_resource path="res://Entities/MenuButton/MenuButton.tscn" type="PackedScene" id=4]
@@ -20,7 +20,8 @@ __meta__ = {
 }
 
 [node name="Sprite" type="Sprite" parent="."]
-scale = Vector2( 1, 0.9 )
+position = Vector2( -4.76236, 3.17482 )
+scale = Vector2( 2.18662, 2.38355 )
 texture = ExtResource( 1 )
 
 [node name="Text" type="Label" parent="."]
@@ -47,13 +48,12 @@ __meta__ = {
 }
 
 [node name="Accept" parent="CenterAccept" instance=ExtResource( 4 )]
-margin_left = 52.0
-margin_top = 14.0
-margin_right = 252.0
-margin_bottom = 64.0
+margin_left = 26.0
+margin_top = 8.0
+margin_right = 277.0
+margin_bottom = 70.0
 rect_min_size = Vector2( 200, 50 )
 size_flags_vertical = 6
-text = ""
 
 [node name="CenterCancel" type="CenterContainer" parent="."]
 margin_left = 2.76724
@@ -65,13 +65,11 @@ __meta__ = {
 }
 
 [node name="Cancel" parent="CenterCancel" instance=ExtResource( 4 )]
-margin_left = 52.0
-margin_top = 14.0
-margin_right = 252.0
-margin_bottom = 64.0
+margin_left = 26.0
+margin_top = 8.0
+margin_right = 277.0
+margin_bottom = 70.0
 rect_min_size = Vector2( 200, 50 )
-text = ""
-clip_text = true
 
 [connection signal="pressed" from="CenterAccept/Accept" to="." method="_on_Accept_pressed"]
 [connection signal="pressed" from="CenterCancel/Cancel" to="." method="_on_Cancel_pressed"]
