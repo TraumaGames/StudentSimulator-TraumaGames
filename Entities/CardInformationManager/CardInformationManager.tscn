@@ -77,4 +77,112 @@ stats_cancel = {
 3: 0
 }
 next_card_index_accept = -1
-next_card_index_cancel = 3
+next_card_index_cancel = 5
+
+[node name="CardInformation6" type="Node" parent="."]
+script = ExtResource( 3 )
+text = "Por fin a finalizado el parcial y llega ese momento para descansar ricolin , pero de repente recuerdas que tenes que entregar para dentro de 2 dias el desafio de paralax "
+textAccept = "Descansar y chau videojuegos "
+textCancel = "que es paralax, un laxante ?"
+stats_accept = {
+3: 25
+}
+stats_cancel = {
+3: 0
+}
+next_card_index_accept = 6
+next_card_index_cancel = 7
+upper_stats = {
+}
+lower_stats = {
+}
+
+[node name="CardInformation7" type="Node" parent="."]
+script = ExtResource( 3 )
+text = "Que buena siesta me pegue , al despertar te encontras con 3 llamadas de tu compañero de desarrollo diciendo que no se ve competente para continuar y te deja solo en un proyecto para 2 o 3 personas "
+textAccept = "Anda a cagar me dejaste solo hdp"
+textCancel = "negociar con los profes"
+stats_accept = {
+3: 25
+}
+stats_cancel = {
+3: 0
+}
+next_card_index_accept = -1
+next_card_index_cancel = -1
+upper_stats = {
+}
+lower_stats = {
+}
+
+[node name="CardInformation8" type="Node" parent="."]
+script = ExtResource( 3 )
+text = "Estas estudiando fuerte paralax pero aun sigues sin entender que rayos es eso , pero llego una prima con facturas y mucho de que hablar"
+textAccept = "Ignorarla y robarle una factura "
+textCancel = "pasar la tarde con la familia "
+stats_accept = {
+3: 25
+}
+stats_cancel = {
+3: 0
+}
+next_card_index_accept = -1
+next_card_index_cancel = 8
+upper_stats = {
+}
+lower_stats = {
+}
+
+[node name="CardInformation9" type="Node" parent="."]
+script = ExtResource( 3 )
+text = "Comenzo un nuevo tiempo donde se termina el ciclo lectivo y empiezan las dichosas vacaciones y se te ocurrieron estas ideas"
+textAccept = "disfrutar de las vacaciones a pleno"
+textCancel = "Seguir estudiando como un psicopata"
+stats_accept = {
+3: 25
+}
+stats_cancel = {
+3: 0
+}
+next_card_index_accept = 9
+next_card_index_cancel = 10
+upper_stats = {
+}
+lower_stats = {
+}
+
+[node name="CardInformation10" type="Node" parent="."]
+script = ExtResource( 3 )
+text = "Elegiste disfrutar de vacaciones y compraste un viaje a cancun,el dia anterior te llamaron del trabajo soñado para ir a una entrevista el mismo dia que tu viaje "
+textAccept = "Me voy de viaje alv"
+textCancel = "pague el viaje al pedo dsp me pago otro con el laburo"
+stats_accept = {
+3: 25
+}
+stats_cancel = {
+3: 0
+}
+next_card_index_accept = -1
+next_card_index_cancel = -1
+upper_stats = {
+}
+lower_stats = {
+}
+
+[node name="CardInformation11" type="Node" parent="."]
+script = ExtResource( 3 )
+text = "Que masoquista sos , los estudios estan consumiento parte de tu vida y no todo en la vida es el estudio , seguro que deseas seguir?"
+textAccept = "Amo estudiar"
+textCancel = "Reflexionar y decidir salir a tomar algo con amigos"
+stats_accept = {
+3: 25
+}
+stats_cancel = {
+3: 0
+}
+next_card_index_accept = -1
+next_card_index_cancel = -1
+upper_stats = {
+}
+lower_stats = {
+}
