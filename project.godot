@@ -59,6 +59,11 @@ _global_script_classes=[ {
 "language": "GDScript",
 "path": "res://Entities/Player/Player.gd"
 }, {
+"base": "TextureButton",
+"class": "QBook",
+"language": "GDScript",
+"path": "res://Entities/QBook/QBook.gd"
+}, {
 "base": "Control",
 "class": "StatBarsManager",
 "language": "GDScript",
@@ -85,6 +90,7 @@ _global_script_class_icons={
 "HUD": "",
 "MessageManager": "",
 "Player": "",
+"QBook": "",
 "StatBarsManager": "",
 "StatManager": "",
 "TagManager": ""

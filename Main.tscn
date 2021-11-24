@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=2]
+[gd_scene load_steps=13 format=2]
 
 [ext_resource path="res://Entities/HUD/HUD.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Entities/Card/Card.tscn" type="PackedScene" id=2]
@@ -11,8 +11,7 @@
 [ext_resource path="res://Entities/TagManager/TagManager.tscn" type="PackedScene" id=9]
 [ext_resource path="res://assets/art/background/room.svg" type="Texture" id=10]
 [ext_resource path="res://assets/art/background/desktop.svg" type="Texture" id=11]
-[ext_resource path="res://assets/art/card/qbook-2.svg" type="Texture" id=12]
-[ext_resource path="res://assets/art/card/qbook-hover.svg" type="Texture" id=13]
+[ext_resource path="res://Entities/QBook/QBook.tscn" type="PackedScene" id=12]
 
 [node name="Main" type="Node"]
 script = ExtResource( 3 )
@@ -71,17 +70,11 @@ one_shot = true
 
 [node name="TagManager" parent="." instance=ExtResource( 9 )]
 
-[node name="TextureButton" type="TextureButton" parent="."]
-margin_left = 318.312
-margin_top = 485.0
-margin_right = 1092.31
-margin_bottom = 731.0
-texture_normal = ExtResource( 12 )
-texture_pressed = ExtResource( 12 )
-texture_hover = ExtResource( 13 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
+[node name="QBook" parent="." instance=ExtResource( 12 )]
+margin_left = 328.37
+margin_top = 483.872
+margin_right = 689.37
+margin_bottom = 598.872
 
 [connection signal="reset_game" from="HUD" to="." method="reset_game"]
 [connection signal="start_game" from="HUD" to="." method="start_game"]
