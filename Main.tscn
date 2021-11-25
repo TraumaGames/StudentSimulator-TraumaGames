@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=2]
+[gd_scene load_steps=13 format=2]
 
 [ext_resource path="res://Entities/HUD/HUD.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Entities/Card/Card.tscn" type="PackedScene" id=2]
@@ -11,6 +11,7 @@
 [ext_resource path="res://Entities/TagManager/TagManager.tscn" type="PackedScene" id=9]
 [ext_resource path="res://assets/art/background/room.svg" type="Texture" id=10]
 [ext_resource path="res://assets/art/background/desktop.svg" type="Texture" id=11]
+[ext_resource path="res://Entities/Card/CardExam.tscn" type="PackedScene" id=12]
 
 [node name="Main" type="Node"]
 script = ExtResource( 3 )
@@ -51,6 +52,7 @@ visible = false
 visible = false
 
 [node name="Player" parent="." instance=ExtResource( 4 )]
+visible = false
 position = Vector2( 867.735, 499.321 )
 
 [node name="StatBarsManager" parent="." instance=ExtResource( 5 )]
@@ -68,6 +70,13 @@ one_shot = true
 [node name="StatManager" parent="." instance=ExtResource( 6 )]
 
 [node name="TagManager" parent="." instance=ExtResource( 9 )]
+
+[node name="CardExam" parent="." instance=ExtResource( 12 )]
+visible = false
+margin_left = 514.95
+margin_top = 322.404
+margin_right = 554.95
+margin_bottom = 362.404
 
 [connection signal="reset_game" from="HUD" to="." method="reset_game"]
 [connection signal="start_game" from="HUD" to="." method="start_game"]
