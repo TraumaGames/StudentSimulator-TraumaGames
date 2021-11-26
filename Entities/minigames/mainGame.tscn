@@ -1,0 +1,44 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://Entities/minigames/dodgeball.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Entities/minigames/mainGame.gd" type="Script" id=2]
+[ext_resource path="res://Circle.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Interfaz.tscn" type="PackedScene" id=4]
+
+[sub_resource type="Curve2D" id=1]
+_data = {
+"points": PoolVector2Array( 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1024, 0, 0, 0, 0, 0, 1024, 600, 0, 0, 0, 0, 0, 600, 0, 0, 0, 0, 0, 0 )
+}
+
+[node name="World" type="Node"]
+script = ExtResource( 2 )
+circle = ExtResource( 3 )
+
+[node name="PlayerM" parent="." instance=ExtResource( 1 )]
+visible = false
+position = Vector2( 595.59, 387.986 )
+
+[node name="CircleTimer" type="Timer" parent="."]
+wait_time = 0.421
+
+[node name="ScoreTimer" type="Timer" parent="."]
+
+[node name="InitTimer" type="Timer" parent="."]
+wait_time = 2.0
+one_shot = true
+
+[node name="Position2D" type="Position2D" parent="."]
+position = Vector2( 529.549, 312.915 )
+
+[node name="Path2D" type="Path2D" parent="."]
+curve = SubResource( 1 )
+
+[node name="PathFollow2D" type="PathFollow2D" parent="Path2D"]
+
+[node name="Interfaz" parent="." instance=ExtResource( 4 )]
+
+[connection signal="kick" from="PlayerM" to="." method="_on_PlayerM_kick"]
+[connection signal="timeout" from="CircleTimer" to="." method="_on_CircleTimer_timeout"]
+[connection signal="timeout" from="ScoreTimer" to="." method="_on_ScoreTimer_timeout"]
+[connection signal="timeout" from="InitTimer" to="." method="_on_InitTimer_timeout"]
+[connection signal="init_game" from="Interfaz" to="." method="start_minigame"]
