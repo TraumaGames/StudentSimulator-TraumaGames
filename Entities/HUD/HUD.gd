@@ -10,6 +10,7 @@ onready var game_over_message_timer: Timer = $GameOverMessageTimer
 onready var message_manager: MessageManager =$MessageManager
 onready var card_exam= $Node/CardExam
 onready var card_result= $Node/CardUnary
+onready var world = $World
 
 var result:String
 
@@ -45,5 +46,6 @@ func _on_CardExam_save_result(text):
 
 
 func _on_CardUnary_new_game():
-	emit_signal("reset_game")
-	emit_signal("start_game")
+	world.interfaz_on()	
+	#emit_signal("reset_game")
+	#emit_signal("start_game")

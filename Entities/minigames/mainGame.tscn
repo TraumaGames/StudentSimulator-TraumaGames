@@ -7,7 +7,7 @@
 
 [sub_resource type="Curve2D" id=1]
 _data = {
-"points": PoolVector2Array( 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1024, 0, 0, 0, 0, 0, 1024, 600, 0, 0, 0, 0, 0, 600, 0, 0, 0, 0, 0, 0 )
+"points": PoolVector2Array( 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1024, 0, 0, 0, 0, 0, 1024, 608, 0, 0, 0, 0, 0, 600 )
 }
 
 [node name="World" type="Node"]
@@ -19,7 +19,7 @@ visible = false
 position = Vector2( 595.59, 387.986 )
 
 [node name="CircleTimer" type="Timer" parent="."]
-wait_time = 0.421
+wait_time = 0.21
 
 [node name="ScoreTimer" type="Timer" parent="."]
 
@@ -28,7 +28,7 @@ wait_time = 2.0
 one_shot = true
 
 [node name="Position2D" type="Position2D" parent="."]
-position = Vector2( 529.549, 312.915 )
+position = Vector2( 512, 288 )
 
 [node name="Path2D" type="Path2D" parent="."]
 curve = SubResource( 1 )

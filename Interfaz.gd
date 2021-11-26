@@ -7,14 +7,19 @@ func message_value(msg):
 	$Message.show()
 	$MessageTimer.start()
 
+func show_all():
+	emit_signal("init_game")
+	
+	
 func game_over():
-	message_value("Score")
+	message_value("Game over")
 	yield($MessageTimer,"timeout")
 	$Button.show()
-	$Message.text= "Dodge ball"
+	$Message.text= "Dodge Covid"
 	$Message.show() 
 	
 func update_score(point):
+	$ScoreLabel.show()
 	$ScoreLabel.text=str(point)
 
 

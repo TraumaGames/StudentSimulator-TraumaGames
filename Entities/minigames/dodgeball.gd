@@ -10,16 +10,16 @@ func _ready():
 	
 func _process(delta):
 	self.moving = Vector2()
-	if(Input.is_action_pressed("up")):
-		moving.y+=1
 	if(Input.is_action_pressed("down")):
+		moving.y+=1
+	if(Input.is_action_pressed("up")):
 		moving.y-=1
 	if(Input.is_action_pressed("left")):
 		moving.x-=1
 	if(Input.is_action_pressed("right")):
 		moving.x+=1
 	if moving.length()>0 : 
-		moving= moving.normalized() + velocity
+		moving= moving.normalized() * velocity
 	position+=moving*delta
 	position.x=clamp(position.x,0,limit.x)
 	position.y=clamp(position.y,0,limit.y)
@@ -27,12 +27,12 @@ func _process(delta):
 
 func _on_minigame_body_entered(body):
 	hide()
-	emit_signal("golpe")
+	emit_signal("kick")
 	$CollisionShape2D.disabled=true
 	
 	
 func init(pos):
-	position= pos
+#	position= pos
 	show()
 	$CollisionShape2D.disabled=false
 
