@@ -1,0 +1,657 @@
+[gd_scene load_steps=8 format=2]
+
+[ext_resource path="res://assets/fonts/Roboto-Regular.ttf" type="DynamicFontData" id=1]
+[ext_resource path="res://assets/art/calendar/calendar.svg" type="Texture" id=2]
+[ext_resource path="res://assets/fonts/PTSans-Bold.ttf" type="DynamicFontData" id=3]
+[ext_resource path="res://assets/art/calendar/cross.png" type="Texture" id=4]
+
+[sub_resource type="DynamicFont" id=1]
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=2]
+size = 10
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=3]
+size = 20
+font_data = ExtResource( 3 )
+
+[node name="Calendar" type="TextureButton"]
+margin_right = 405.0
+margin_bottom = 214.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Sprite" type="Sprite" parent="."]
+position = Vector2( 199.875, 106.681 )
+texture = ExtResource( 2 )
+
+[node name="Month" type="Label" parent="."]
+margin_left = 32.6689
+margin_top = 4.0
+margin_right = 125.669
+margin_bottom = 23.0
+custom_fonts/font = SubResource( 1 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "Noviembre"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Year" type="Label" parent="."]
+margin_left = 281.669
+margin_top = 4.0
+margin_right = 374.669
+margin_bottom = 23.0
+custom_fonts/font = SubResource( 1 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "2021"
+align = 2
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Weekdays" type="Control" parent="."]
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Lunes" type="Label" parent="Weekdays"]
+margin_left = 77.1988
+margin_top = 26.0
+margin_right = 125.199
+margin_bottom = 43.0
+custom_fonts/font = SubResource( 2 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "Lunes"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Martes" type="Label" parent="Weekdays"]
+margin_left = 126.699
+margin_top = 25.7351
+margin_right = 174.699
+margin_bottom = 42.7351
+custom_fonts/font = SubResource( 2 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "Martes"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Miercoles" type="Label" parent="Weekdays"]
+margin_left = 176.404
+margin_top = 26.0
+margin_right = 226.404
+margin_bottom = 43.0
+custom_fonts/font = SubResource( 2 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "Miercoles"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Jueves" type="Label" parent="Weekdays"]
+margin_left = 225.069
+margin_top = 26.4283
+margin_right = 273.069
+margin_bottom = 43.4283
+custom_fonts/font = SubResource( 2 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "Jueves"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Viernes" type="Label" parent="Weekdays"]
+margin_left = 275.155
+margin_top = 25.7901
+margin_right = 323.155
+margin_bottom = 42.7901
+custom_fonts/font = SubResource( 2 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "Viernes"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Sabado" type="Label" parent="Weekdays"]
+margin_left = 324.4
+margin_top = 25.6149
+margin_right = 372.4
+margin_bottom = 42.6149
+custom_fonts/font = SubResource( 2 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "Sabado"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Domingo" type="Label" parent="Weekdays"]
+margin_left = 27.7957
+margin_top = 25.8518
+margin_right = 75.7957
+margin_bottom = 42.8518
+custom_fonts/font = SubResource( 2 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "Domingo"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Days" type="Control" parent="."]
+margin_right = 40.0
+margin_bottom = 40.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Cross" type="Sprite" parent="Days"]
+position = Vector2( 201.357, 61.0381 )
+texture = ExtResource( 4 )
+
+[node name="Day5" type="Label" parent="Days"]
+margin_left = 49.2381
+margin_top = 84.1178
+margin_right = 74.2381
+margin_bottom = 111.118
+custom_fonts/font = SubResource( 3 )
+custom_colors/font_color = Color( 0.92549, 0.0588235, 0.0588235, 1 )
+text = "5"
+align = 2
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Day12" type="Label" parent="Days"]
+margin_left = 49.8327
+margin_top = 116.821
+margin_right = 74.8327
+margin_bottom = 143.821
+custom_fonts/font = SubResource( 3 )
+custom_colors/font_color = Color( 0.92549, 0.0588235, 0.0588235, 1 )
+text = "12"
+align = 2
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Day19" type="Label" parent="Days"]
+margin_left = 49.8327
+margin_top = 151.497
+margin_right = 74.8327
+margin_bottom = 178.497
+custom_fonts/font = SubResource( 3 )
+custom_colors/font_color = Color( 0.92549, 0.0588235, 0.0588235, 1 )
+text = "19"
+align = 2
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Day26" type="Label" parent="Days"]
+margin_left = 49.7157
+margin_top = 184.612
+margin_right = 74.7157
+margin_bottom = 211.612
+custom_fonts/font = SubResource( 3 )
+custom_colors/font_color = Color( 0.92549, 0.0588235, 0.0588235, 1 )
+text = "26"
+align = 2
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Day1" type="Label" parent="Days"]
+margin_left = 198.781
+margin_top = 49.4585
+margin_right = 223.781
+margin_bottom = 76.4585
+custom_fonts/font = SubResource( 3 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "1"
+align = 2
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Day2" type="Label" parent="Days"]
+margin_left = 246.594
+margin_top = 49.0617
+margin_right = 271.594
+margin_bottom = 76.0617
+custom_fonts/font = SubResource( 3 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "2"
+align = 2
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Day3" type="Label" parent="Days"]
+margin_left = 296.994
+margin_top = 49.0617
+margin_right = 321.994
+margin_bottom = 76.0617
+custom_fonts/font = SubResource( 3 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "3"
+align = 2
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Day4" type="Label" parent="Days"]
+margin_left = 346.203
+margin_top = 49.0617
+margin_right = 371.203
+margin_bottom = 76.0617
+custom_fonts/font = SubResource( 3 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "4"
+align = 2
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Day6" type="Label" parent="Days"]
+margin_left = 98.3298
+margin_top = 83.2338
+margin_right = 123.33
+margin_bottom = 110.234
+custom_fonts/font = SubResource( 3 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "6"
+align = 2
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Day7" type="Label" parent="Days"]
+margin_left = 149.065
+margin_top = 83.5874
+margin_right = 174.065
+margin_bottom = 110.587
+custom_fonts/font = SubResource( 3 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "7"
+align = 2
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Day8" type="Label" parent="Days"]
+margin_left = 197.837
+margin_top = 83.5874
+margin_right = 222.837
+margin_bottom = 110.587
+custom_fonts/font = SubResource( 3 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "8"
+align = 2
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Day9" type="Label" parent="Days"]
+margin_left = 247.029
+margin_top = 82.7465
+margin_right = 272.029
+margin_bottom = 109.746
+custom_fonts/font = SubResource( 3 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "9"
+align = 2
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Day10" type="Label" parent="Days"]
+margin_left = 296.468
+margin_top = 83.1669
+margin_right = 321.468
+margin_bottom = 110.167
+custom_fonts/font = SubResource( 3 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "10"
+align = 2
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Day11" type="Label" parent="Days"]
+margin_left = 345.399
+margin_top = 84.3561
+margin_right = 370.399
+margin_bottom = 111.356
+custom_fonts/font = SubResource( 3 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "11"
+align = 2
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Day13" type="Label" parent="Days"]
+margin_left = 99.0314
+margin_top = 116.382
+margin_right = 124.031
+margin_bottom = 143.382
+custom_fonts/font = SubResource( 3 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "13"
+align = 2
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Day14" type="Label" parent="Days"]
+margin_left = 148.224
+margin_top = 116.382
+margin_right = 173.224
+margin_bottom = 143.382
+custom_fonts/font = SubResource( 3 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "14"
+align = 2
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Day15" type="Label" parent="Days"]
+margin_left = 197.837
+margin_top = 117.644
+margin_right = 222.837
+margin_bottom = 144.644
+custom_fonts/font = SubResource( 3 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "15"
+align = 2
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Day16" type="Label" parent="Days"]
+margin_left = 246.347
+margin_top = 116.382
+margin_right = 271.347
+margin_bottom = 143.382
+custom_fonts/font = SubResource( 3 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "16"
+align = 2
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Day17" type="Label" parent="Days"]
+margin_left = 297.222
+margin_top = 117.223
+margin_right = 322.222
+margin_bottom = 144.223
+custom_fonts/font = SubResource( 3 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "17"
+align = 2
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Day18" type="Label" parent="Days"]
+margin_left = 346.009
+margin_top = 116.803
+margin_right = 371.009
+margin_bottom = 143.803
+custom_fonts/font = SubResource( 3 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "18"
+align = 2
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Day20" type="Label" parent="Days"]
+margin_left = 97.1904
+margin_top = 150.439
+margin_right = 122.19
+margin_bottom = 177.439
+custom_fonts/font = SubResource( 3 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "20"
+align = 2
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Day21" type="Label" parent="Days"]
+margin_left = 147.803
+margin_top = 150.859
+margin_right = 172.803
+margin_bottom = 177.859
+custom_fonts/font = SubResource( 3 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "21"
+align = 2
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Day22" type="Label" parent="Days"]
+margin_left = 196.386
+margin_top = 150.439
+margin_right = 221.386
+margin_bottom = 177.439
+custom_fonts/font = SubResource( 3 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "22"
+align = 2
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Day23" type="Label" parent="Days"]
+margin_left = 248.377
+margin_top = 149.844
+margin_right = 273.377
+margin_bottom = 176.844
+custom_fonts/font = SubResource( 3 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "23"
+align = 2
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Day24" type="Label" parent="Days"]
+margin_left = 295.786
+margin_top = 150.018
+margin_right = 320.786
+margin_bottom = 177.018
+custom_fonts/font = SubResource( 3 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "24"
+align = 2
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Day25" type="Label" parent="Days"]
+margin_left = 345.414
+margin_top = 150.018
+margin_right = 370.414
+margin_bottom = 177.018
+custom_fonts/font = SubResource( 3 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "25"
+align = 2
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Day27" type="Label" parent="Days"]
+margin_left = 98.8578
+margin_top = 184.321
+margin_right = 123.858
+margin_bottom = 211.321
+custom_fonts/font = SubResource( 3 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "27"
+align = 2
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Day28" type="Label" parent="Days"]
+margin_left = 147.579
+margin_top = 184.321
+margin_right = 172.579
+margin_bottom = 211.321
+custom_fonts/font = SubResource( 3 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "28"
+align = 2
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Day29" type="Label" parent="Days"]
+margin_left = 196.301
+margin_top = 183.988
+margin_right = 221.301
+margin_bottom = 210.988
+custom_fonts/font = SubResource( 3 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "29"
+align = 2
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Day30" type="Label" parent="Days"]
+margin_left = 245.69
+margin_top = 184.321
+margin_right = 270.69
+margin_bottom = 211.321
+custom_fonts/font = SubResource( 3 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "30"
+align = 2
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Day31" type="Label" parent="Days"]
+margin_left = 297.212
+margin_top = 184.405
+margin_right = 322.212
+margin_bottom = 211.405
+custom_fonts/font = SubResource( 3 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "31"
+align = 2
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="DayOff1" type="Label" parent="Days"]
+margin_left = 346.285
+margin_top = 184.273
+margin_right = 371.285
+margin_bottom = 211.273
+custom_fonts/font = SubResource( 3 )
+custom_colors/font_color = Color( 0.423529, 0.423529, 0.423529, 1 )
+text = "1"
+align = 2
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="DayOff28" type="Label" parent="Days"]
+margin_left = 51.5345
+margin_top = 49.5157
+margin_right = 76.5345
+margin_bottom = 76.5157
+custom_fonts/font = SubResource( 3 )
+custom_colors/font_color = Color( 0.423529, 0.423529, 0.423529, 1 )
+text = "28"
+align = 2
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="DayOff29" type="Label" parent="Days"]
+margin_left = 100.282
+margin_top = 49.3919
+margin_right = 125.282
+margin_bottom = 76.3919
+custom_fonts/font = SubResource( 3 )
+custom_colors/font_color = Color( 0.423529, 0.423529, 0.423529, 1 )
+text = "29"
+align = 2
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="DayOff30" type="Label" parent="Days"]
+margin_left = 149.253
+margin_top = 49.6428
+margin_right = 174.253
+margin_bottom = 76.6428
+custom_fonts/font = SubResource( 3 )
+custom_colors/font_color = Color( 0.423529, 0.423529, 0.423529, 1 )
+text = "30"
+align = 2
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
