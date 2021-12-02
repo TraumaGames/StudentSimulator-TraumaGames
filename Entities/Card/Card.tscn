@@ -21,7 +21,6 @@ __meta__ = {
 
 [node name="Sprite" type="Sprite" parent="."]
 position = Vector2( -0.759033, -26.7913 )
-scale = Vector2( 2.18662, 2.38355 )
 texture = ExtResource( 1 )
 
 [node name="Text" type="Label" parent="."]
@@ -49,7 +48,7 @@ __meta__ = {
 
 [node name="Accept" parent="CenterAccept" instance=ExtResource( 4 )]
 margin_left = 26.0
-margin_top = 8.0
+margin_top = 7.0
 margin_right = 277.0
 margin_bottom = 70.0
 rect_min_size = Vector2( 200, 50 )
@@ -66,7 +65,7 @@ __meta__ = {
 
 [node name="Cancel" parent="CenterCancel" instance=ExtResource( 4 )]
 margin_left = 26.0
-margin_top = 8.0
+margin_top = 7.0
 margin_right = 277.0
 margin_bottom = 70.0
 rect_min_size = Vector2( 200, 50 )

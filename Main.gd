@@ -9,6 +9,7 @@ onready var card = $Card
 onready var player: Player = $Player
 onready var stat_bars_manager: StatBarsManager = $StatBarsManager
 onready var card_timer: Timer =$CardTimer
+onready var opened_qbook: Node =$OpenedQbook
 
 func _ready():
 	_set_initial_state()
@@ -51,3 +52,7 @@ func _on_CardManager_close_card(stats_update):
 	else:
 		hud.wait()
 		card_timer.start()
+
+
+func _on_QBook_pressed():
+	opened_qbook.show()
