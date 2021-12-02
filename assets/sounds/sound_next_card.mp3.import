@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/sound_next_card.mp3-c5349043c31fac0ae744f699a6959336.mp3str"
+
+[deps]
+
+source_file="res://assets/sounds/sound_next_card.mp3"
+dest_files=[ "res://.import/sound_next_card.mp3-c5349043c31fac0ae744f699a6959336.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0
