@@ -41,8 +41,8 @@ func is_empty_card():
 	return currentCard == null
 
 func show_card():
-	show()
-	currentCard.show()
+	#show()
+	currentCard.show_card()
 
 func _on_Card_close_card(stats_select):
 	emit_signal("close_card", stats_select)

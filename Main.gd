@@ -1,58 +1,45 @@
 extends Node
 
 onready var card_information_manager: CardInformationManager = $CardInformationManager
-onready var card_manager: CardManager = $CardManager
 onready var tag_manager: TagManager = $TagManager
 onready var stat_manager: StatManager = $StatManager
 onready var hud: HUD = $HUD
 onready var card = $Card
 onready var player: Player = $Player
 onready var stat_bars_manager: StatBarsManager = $StatBarsManager
-onready var card_timer: Timer =$CardTimer
 onready var opened_qbook: Node =$OpenedQbook
+var day = 1
 
 func _ready():
 	_set_initial_state()
 
 func start_game():
-	hud.wait()
-	player.show()
 	stat_bars_manager.show()
-	card_timer.start()
+	
 func reset_game():
 	_set_initial_state()
-	
 
 func finish_game():
 	hud.game_over({"stats": stat_manager.stats})
 
-func _on_CardTimer_timeout():
-	card_manager.show_card()
-	hud.stop_wait()
-
 func _set_initial_state():
-	player.hide()
 	stat_bars_manager.hide()
-	card_manager.hide()
-	card_manager.initialize(tag_manager, stat_manager, card_information_manager)
+	opened_qbook.initialize(tag_manager, stat_manager, card_information_manager)
 	stat_manager.reset()
-	card_manager.reset()
-
+	opened_qbook.reset()
 
 func _on_StatManager_stats_change(stats):
 	stat_bars_manager.update_stats(stats)
-	player.update_stats(stats)
-
-
-func _on_CardManager_close_card(stats_update):
-	stat_manager.update_stats(stats_update)
-	card_manager.next_card()
-	if card_manager.is_empty_card():
-		finish_game()
-	else:
-		hud.wait()
-		card_timer.start()
-
+	opened_qbook.update_stats(stats)
 
 func _on_QBook_pressed():
-	opened_qbook.show()
+	opened_qbook.open()
+
+
+func _on_OpenedQbook_close_card(stats_update):
+	day += 1
+	stat_manager.update_stats(stats_update)
+	opened_qbook.next_card()
+	if opened_qbook.is_empty_card():
+		finish_game()
+	opened_qbook.close()
