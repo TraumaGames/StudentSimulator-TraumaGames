@@ -18,9 +18,9 @@ func start_game():
 	player.show()
 	stat_bars_manager.show()
 	card_timer.start()
-
 func reset_game():
 	_set_initial_state()
+	
 
 func finish_game():
 	hud.game_over({"stats": stat_manager.stats})
