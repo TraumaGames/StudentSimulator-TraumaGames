@@ -99,40 +99,90 @@ correct = "1 y -1"
 
 [node name="Exercise1_hard" type="Node" parent="."]
 script = ExtResource( 2 )
-question = "1) hard"
+question = "1) Cual es el tipo de foldr"
+buton1_Text = "(a -> b) -> b -> [a] -> b"
+buton2_Text = "a -> b -> b -> b -> [a] -> b"
+buton3_Text = "(a -> b -> b) -> b -> [a] -> b"
+buton4_Text = "(a -> a -> b) -> b -> a -> b"
+correct = "(a -> b -> b) -> b -> [a] -> b"
 
 [node name="Exercise2_hard" type="Node" parent="."]
 script = ExtResource( 2 )
-question = "2)dificil"
+question = "2) cual es el codigo postal de san martin"
+buton1_Text = "1300"
+buton2_Text = "1500"
+buton3_Text = "1650"
+buton4_Text = "1872"
+correct = "1650"
 
 [node name="Exercise3_hard" type="Node" parent="."]
 script = ExtResource( 2 )
-question = "3)complicado"
+question = "3) cuantos octetos hay en una ip del protocolo ipv4"
+buton1_Text = "4"
+buton2_Text = "8"
+buton3_Text = "32"
+buton4_Text = "16"
+correct = "4"
 
 [node name="Exercise4_hard" type="Node" parent="."]
 script = ExtResource( 2 )
-question = "4)Muy jodido"
+question = "4)Que servicio provee subir una app a desarrollo "
+buton1_Text = "Jeropa"
+buton2_Text = "Heroku"
+buton3_Text = "SonarCloud"
+buton4_Text = "React"
+correct = "Heroku"
 
 [node name="Exercise5_hard" type="Node" parent="."]
 script = ExtResource( 2 )
 question = "5) No se aprueba"
+buton1_Text = "1"
+buton2_Text = "2"
+buton3_Text = "3"
+buton4_Text = "4"
+correct = "1"
 
 [node name="Exercise6_hard" type="Node" parent="."]
 script = ExtResource( 2 )
 question = "6) Se recursa"
+buton1_Text = "1"
+buton2_Text = "2"
+buton3_Text = "3"
+buton4_Text = "4"
+correct = "1"
 
 [node name="Exercise7_hard" type="Node" parent="."]
 script = ExtResource( 2 )
 question = "7) Adios profe"
+buton1_Text = "1"
+buton2_Text = "2"
+buton3_Text = "3"
+buton4_Text = "4"
+correct = "1"
 
 [node name="Exercise8_hard" type="Node" parent="."]
 script = ExtResource( 2 )
 question = "8)Fue un privilegio cursar con ustedes"
+buton1_Text = "1"
+buton2_Text = "2"
+buton3_Text = "3"
+buton4_Text = "4"
+correct = "1"
 
 [node name="Exercise9_hard" type="Node" parent="."]
 script = ExtResource( 2 )
 question = "9) Bienvenida vacaciones"
+buton1_Text = "1"
+buton2_Text = "2"
+buton3_Text = "3"
+buton4_Text = "4"
+correct = "1"
 
 [node name="Exercise10_hard" type="Node" parent="."]
 script = ExtResource( 2 )
 question = "10) en que me anoto"
+buton1_Text = "1"
+buton2_Text = "2"
+buton3_Text = "3"
+buton4_Text = "4"
+correct = "1"
