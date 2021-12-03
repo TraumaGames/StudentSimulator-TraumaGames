@@ -120,13 +120,11 @@ margin_right = 177.0
 margin_bottom = 57.785
 
 [node name="Calendar" parent="." instance=ExtResource( 16 )]
+margin_top = 119.8
+margin_bottom = 333.8
 initial_date = 22
 
 [node name="OpenedQbook" parent="." instance=ExtResource( 14 )]
-margin_left = 14.77
-margin_top = 602.353
-margin_right = 1013.77
-margin_bottom = 1157.35
 
 [node name="InitSound" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 2 )

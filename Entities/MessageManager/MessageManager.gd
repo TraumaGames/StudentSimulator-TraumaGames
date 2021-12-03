@@ -15,10 +15,8 @@ func _ready():
 	for card in cards : 
 		if card.type()=="easy":
 			easy_exam.append(card)
-			exam_results.append(card.correct)
 		else: 
 			hard_exam.append(card)
-			exam_results.append(card.correct)
 		card.set_parent(self)
 
 func game_over_message(state):
@@ -47,17 +45,28 @@ func generate_exam(card_exam,result):
 		self.calification=0
 		evaluate_exam()
 		card_result.initialize("Tu calificacion es: "+str(calification), "Continuar")
+		calification=0 
+		results=[]
+		exam_results=[]
 		card_result.show()
 		
 func generate_card(card_exam,type):
 	self.type_exam=type
 	if type=="easy":
+		for card in cards : 
+			if card.type()=="easy":
+				exam_results.append(card.correct)
+	
 		easy_exam[index].init_exam(card_exam)
 	else:
+		for card in cards : 
+			if card.type()=="hard":
+				exam_results.append(card.correct)
+
 		hard_exam[index].init_exam(card_exam)
 
 func evaluate_exam():
-	for i in range(0,9):
+	for i in range(0,10):
 		if(exam_results[i] == results[i]):
 			calification+=1
 				
