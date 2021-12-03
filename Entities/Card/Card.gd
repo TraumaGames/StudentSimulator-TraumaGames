@@ -6,12 +6,18 @@ signal close_card(stats_select)
 onready var label: Label = $Text
 onready var buttonAccept: TextureButton = $CenterAccept/Accept
 onready var buttonCancel: TextureButton = $CenterCancel/Cancel
+onready var animation_player: AnimationPlayer = $AnimationPlayer
 var card_information
 
 func set_information(information):
 	card_information = information
 	if information != null:
 		update_values(information.text, information.textAccept, information.textCancel)
+
+func show_card():
+	animation_player.stop()
+	show()
+	animation_player.play("show")
 
 func update_values(text, textAccept, textCancel):
 	label.text = text
@@ -28,6 +34,7 @@ func _on_Cancel_pressed():
 
 func _on_select(stats_select):
 	self.hide()
+	rect_scale = Vector2(0, 0)
 	emit_signal("close_card", stats_select)
 
 func set_next_information(state):

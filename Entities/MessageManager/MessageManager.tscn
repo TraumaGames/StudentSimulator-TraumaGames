@@ -1,6 +1,138 @@
-[gd_scene load_steps=2 format=2]
+[gd_scene load_steps=4 format=2]
 
 [ext_resource path="res://Entities/MessageManager/MessageManager.gd" type="Script" id=1]
+[ext_resource path="res://Entities/MessageManager/Exercise1_hard.gd" type="Script" id=2]
+[ext_resource path="res://Entities/MessageManager/Exercise1.gd" type="Script" id=3]
 
 [node name="MessageManager" type="Node"]
 script = ExtResource( 1 )
+
+[node name="Exercise1_easy" type="Node" parent="."]
+script = ExtResource( 3 )
+question = "1) Como se le dice a la formula de Bhaskara"
+buton1_Text = "La resolvente"
+buton2_Text = "El ruffini"
+buton3_Text = "Las raices x1 x2"
+buton4_Text = "Gauss"
+correct = "La resolvente"
+
+[node name="Exercise2_easy" type="Node" parent="."]
+script = ExtResource( 3 )
+question = "2) Cuanto es 5+5"
+buton1_Text = "10"
+buton2_Text = "15"
+buton3_Text = "0"
+buton4_Text = "9"
+correct = "10"
+
+[node name="Exercise3_easy" type="Node" parent="."]
+script = ExtResource( 3 )
+question = "3)cuanto es 10 + 10"
+buton1_Text = "20"
+buton2_Text = "40"
+buton3_Text = "si el 2"
+buton4_Text = "2"
+correct = "20"
+
+[node name="Exercise4_easy" type="Node" parent="."]
+script = ExtResource( 3 )
+question = "4)Cuanto es 3 x 3"
+buton1_Text = "4"
+buton2_Text = "6"
+buton3_Text = "9"
+buton4_Text = "2"
+correct = "9"
+
+[node name="Exercise5_easy" type="Node" parent="."]
+script = ExtResource( 3 )
+question = "5) Cuanto es 5 x 3"
+buton1_Text = "8"
+buton2_Text = "20"
+buton3_Text = "30"
+buton4_Text = "15"
+correct = "15"
+
+[node name="Exercise6_easy" type="Node" parent="."]
+script = ExtResource( 3 )
+question = "6) Que te parece este juego"
+buton1_Text = "aburre"
+buton2_Text = "divertidisimo"
+buton3_Text = "depende de julieta"
+buton4_Text = "mejor que el de delta software seguro"
+correct = "divertidismo"
+
+[node name="Exercise7_easy" type="Node" parent="."]
+script = ExtResource( 3 )
+question = "7) me canse de escribir"
+buton1_Text = "re si "
+buton2_Text = "amo escribir "
+buton3_Text = "no podria hacerlo otro"
+buton4_Text = "ya me duelen los dedos"
+correct = "re si"
+
+[node name="Exercise8_easy" type="Node" parent="."]
+script = ExtResource( 3 )
+question = "8) 2+1"
+buton1_Text = "3"
+buton2_Text = "6"
+buton3_Text = "1"
+buton4_Text = "8"
+correct = "3"
+
+[node name="Exercise9_easy" type="Node" parent="."]
+script = ExtResource( 3 )
+question = "9) que dia es hoy"
+buton1_Text = "lunes"
+buton2_Text = "miercoles"
+buton3_Text = "jueves"
+buton4_Text = "viernes"
+correct = "viernes"
+
+[node name="Exercise10_easy" type="Node" parent="."]
+script = ExtResource( 3 )
+question = "10) cuanto es la raiz de 2"
+buton1_Text = "1"
+buton2_Text = "0"
+buton3_Text = "no tiene raiz"
+buton4_Text = "1 y -1"
+correct = "1 y -1"
+
+[node name="Exercise1_hard" type="Node" parent="."]
+script = ExtResource( 2 )
+question = "1) hard"
+
+[node name="Exercise2_hard" type="Node" parent="."]
+script = ExtResource( 2 )
+question = "2)dificil"
+
+[node name="Exercise3_hard" type="Node" parent="."]
+script = ExtResource( 2 )
+question = "3)complicado"
+
+[node name="Exercise4_hard" type="Node" parent="."]
+script = ExtResource( 2 )
+question = "4)Muy jodido"
+
+[node name="Exercise5_hard" type="Node" parent="."]
+script = ExtResource( 2 )
+question = "5) No se aprueba"
+
+[node name="Exercise6_hard" type="Node" parent="."]
+script = ExtResource( 2 )
+question = "6) Se recursa"
+
+[node name="Exercise7_hard" type="Node" parent="."]
+script = ExtResource( 2 )
+question = "7) Adios profe"
+
+[node name="Exercise8_hard" type="Node" parent="."]
+script = ExtResource( 2 )
+question = "8)Fue un privilegio cursar con ustedes"
+
+[node name="Exercise9_hard" type="Node" parent="."]
+script = ExtResource( 2 )
+question = "9) Bienvenida vacaciones"
+
+[node name="Exercise10_hard" type="Node" parent="."]
+script = ExtResource( 2 )
+question = "10) en que me anoto"
