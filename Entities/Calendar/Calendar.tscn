@@ -157,132 +157,169 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Days" type="Control" parent="."]
+[node name="Crosses" type="Control" parent="."]
 margin_right = 40.0
 margin_bottom = 40.0
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Cross1" type="Sprite" parent="Days"]
+[node name="Cross1" type="Sprite" parent="Crosses"]
+visible = false
 position = Vector2( 101.069, 57.2097 )
 texture = ExtResource( 4 )
 
-[node name="Cross2" type="Sprite" parent="Days"]
+[node name="Cross2" type="Sprite" parent="Crosses"]
+visible = false
 position = Vector2( 149.273, 58.2703 )
 texture = ExtResource( 4 )
 
-[node name="Cross3" type="Sprite" parent="Days"]
+[node name="Cross3" type="Sprite" parent="Crosses"]
+visible = false
 position = Vector2( 198.273, 58.2703 )
 texture = ExtResource( 4 )
 
-[node name="Cross4" type="Sprite" parent="Days"]
+[node name="Cross4" type="Sprite" parent="Crosses"]
+visible = false
 position = Vector2( 247.273, 58.2703 )
 texture = ExtResource( 4 )
 
-[node name="Cross5" type="Sprite" parent="Days"]
+[node name="Cross5" type="Sprite" parent="Crosses"]
+visible = false
 position = Vector2( 298.57, 58.8318 )
 texture = ExtResource( 4 )
 
-[node name="Cross6" type="Sprite" parent="Days"]
+[node name="Cross6" type="Sprite" parent="Crosses"]
+visible = false
 position = Vector2( 347.689, 58.2765 )
 texture = ExtResource( 4 )
 
-[node name="Cross7" type="Sprite" parent="Days"]
+[node name="Cross7" type="Sprite" parent="Crosses"]
+visible = false
 position = Vector2( 50.357, 86.0381 )
 texture = ExtResource( 4 )
 
-[node name="Cross8" type="Sprite" parent="Days"]
+[node name="Cross8" type="Sprite" parent="Crosses"]
+visible = false
 position = Vector2( 99.357, 86.0381 )
 texture = ExtResource( 4 )
 
-[node name="Cross9" type="Sprite" parent="Days"]
+[node name="Cross9" type="Sprite" parent="Crosses"]
+visible = false
 position = Vector2( 150.357, 85.0381 )
 texture = ExtResource( 4 )
 
-[node name="Cross10" type="Sprite" parent="Days"]
+[node name="Cross10" type="Sprite" parent="Crosses"]
+visible = false
 position = Vector2( 199.357, 86.5381 )
 texture = ExtResource( 4 )
 
-[node name="Cross11" type="Sprite" parent="Days"]
+[node name="Cross11" type="Sprite" parent="Crosses"]
+visible = false
 position = Vector2( 249.857, 86.0381 )
 texture = ExtResource( 4 )
 
-[node name="Cross12" type="Sprite" parent="Days"]
+[node name="Cross12" type="Sprite" parent="Crosses"]
+visible = false
 position = Vector2( 298.357, 86.5381 )
 texture = ExtResource( 4 )
 
-[node name="Cross13" type="Sprite" parent="Days"]
+[node name="Cross13" type="Sprite" parent="Crosses"]
+visible = false
 position = Vector2( 347.857, 86.0381 )
 texture = ExtResource( 4 )
 
-[node name="Cross14" type="Sprite" parent="Days"]
+[node name="Cross14" type="Sprite" parent="Crosses"]
+visible = false
 position = Vector2( 50.357, 113.038 )
 texture = ExtResource( 4 )
 
-[node name="Cross15" type="Sprite" parent="Days"]
+[node name="Cross15" type="Sprite" parent="Crosses"]
+visible = false
 position = Vector2( 101.069, 113.21 )
 texture = ExtResource( 4 )
 
-[node name="Cross16" type="Sprite" parent="Days"]
+[node name="Cross16" type="Sprite" parent="Crosses"]
+visible = false
 position = Vector2( 149.273, 114.27 )
 texture = ExtResource( 4 )
 
-[node name="Cross17" type="Sprite" parent="Days"]
+[node name="Cross17" type="Sprite" parent="Crosses"]
+visible = false
 position = Vector2( 198.273, 114.27 )
 texture = ExtResource( 4 )
 
-[node name="Cross18" type="Sprite" parent="Days"]
+[node name="Cross18" type="Sprite" parent="Crosses"]
+visible = false
 position = Vector2( 247.273, 114.27 )
 texture = ExtResource( 4 )
 
-[node name="Cross19" type="Sprite" parent="Days"]
+[node name="Cross19" type="Sprite" parent="Crosses"]
+visible = false
 position = Vector2( 298.57, 114.832 )
 texture = ExtResource( 4 )
 
-[node name="Cross20" type="Sprite" parent="Days"]
+[node name="Cross20" type="Sprite" parent="Crosses"]
+visible = false
 position = Vector2( 347.689, 114.277 )
 texture = ExtResource( 4 )
 
-[node name="Cross21" type="Sprite" parent="Days"]
+[node name="Cross21" type="Sprite" parent="Crosses"]
+visible = false
 position = Vector2( 50.357, 142.038 )
 texture = ExtResource( 4 )
 
-[node name="Cross22" type="Sprite" parent="Days"]
+[node name="Cross22" type="Sprite" parent="Crosses"]
+visible = false
 position = Vector2( 99.357, 142.038 )
 texture = ExtResource( 4 )
 
-[node name="Cross23" type="Sprite" parent="Days"]
+[node name="Cross23" type="Sprite" parent="Crosses"]
+visible = false
 position = Vector2( 150.357, 141.038 )
 texture = ExtResource( 4 )
 
-[node name="Cross24" type="Sprite" parent="Days"]
+[node name="Cross24" type="Sprite" parent="Crosses"]
+visible = false
 position = Vector2( 199.357, 142.538 )
 texture = ExtResource( 4 )
 
-[node name="Cross25" type="Sprite" parent="Days"]
+[node name="Cross25" type="Sprite" parent="Crosses"]
+visible = false
 position = Vector2( 249.857, 142.038 )
 texture = ExtResource( 4 )
 
-[node name="Cross26" type="Sprite" parent="Days"]
+[node name="Cross26" type="Sprite" parent="Crosses"]
+visible = false
 position = Vector2( 298.357, 142.538 )
 texture = ExtResource( 4 )
 
-[node name="Cross27" type="Sprite" parent="Days"]
+[node name="Cross27" type="Sprite" parent="Crosses"]
+visible = false
 position = Vector2( 347.857, 142.038 )
 texture = ExtResource( 4 )
 
-[node name="Cross28" type="Sprite" parent="Days"]
+[node name="Cross28" type="Sprite" parent="Crosses"]
+visible = false
 position = Vector2( 49.857, 171.038 )
 texture = ExtResource( 4 )
 
-[node name="Cross29" type="Sprite" parent="Days"]
+[node name="Cross29" type="Sprite" parent="Crosses"]
+visible = false
 position = Vector2( 97.857, 171.038 )
 texture = ExtResource( 4 )
 
-[node name="Cross30" type="Sprite" parent="Days"]
+[node name="Cross30" type="Sprite" parent="Crosses"]
+visible = false
 position = Vector2( 147.857, 171.038 )
 texture = ExtResource( 4 )
+
+[node name="Days" type="Control" parent="."]
+margin_right = 40.0
+margin_bottom = 40.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
 [node name="Day5" type="Label" parent="Days"]
 margin_left = 48.2381
