@@ -3,7 +3,7 @@ class_name StatBarsManager
 
 onready var statBars = {
 #	"Salud": $HealthBar,
-	StatManager.Stats.EXERCISES: $ExercisesBar
+	StatManager.Stats.EXERCISES: $HealthBar
 	}
 
 

@@ -20,7 +20,7 @@ func _get_bar_name():
 func _set_value(new_value: float):
 	value = new_value
 	if barName != null:
-		bar.value = value
+	  bar.value = value
 
 func _get_value():
 	return value

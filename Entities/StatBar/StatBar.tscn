@@ -1,6 +1,11 @@
-[gd_scene load_steps=2 format=2]
+[gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://Entities/StatBar/StatBar.gd" type="Script" id=1]
+[ext_resource path="res://assets/fonts/Roboto-Regular.ttf" type="DynamicFontData" id=2]
+[ext_resource path="res://assets/art/line.svg" type="Texture" id=3]
+
+[sub_resource type="DynamicFont" id=1]
+font_data = ExtResource( 2 )
 
 [node name="StatBar" type="Control"]
 margin_right = 132.0
@@ -13,14 +18,36 @@ __meta__ = {
 [node name="BarName" type="Label" parent="."]
 margin_right = 40.0
 margin_bottom = 14.0
+custom_colors/font_color = Color( 0.85098, 0.290196, 0.160784, 1 )
+custom_fonts/font = SubResource( 1 )
+text = "holaa"
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="Bar" type="ProgressBar" parent="."]
-margin_top = 13.0
+margin_top = 20.8353
 margin_right = 132.0
-margin_bottom = 33.0
+margin_bottom = 40.8353
+percent_visible = false
 __meta__ = {
 "_edit_use_anchors_": false
 }
+
+[node name="TextureRect" type="TextureRect" parent="."]
+visible = false
+margin_left = 76.6117
+margin_top = 20.8941
+margin_right = 116.612
+margin_bottom = 60.8941
+texture = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureRect2" type="TextureRect" parent="."]
+margin_left = 45.8532
+margin_top = 20.7647
+margin_right = 85.8532
+margin_bottom = 60.7647
+texture = ExtResource( 3 )

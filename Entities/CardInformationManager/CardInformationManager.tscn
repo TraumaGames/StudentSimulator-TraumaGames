@@ -14,13 +14,15 @@ text = "Estás en etapas de full parciales, tenés que prepararte para Matemáti
 textAccept = "Salir a despejarme"
 textCancel = "Seguir estudiando"
 stats_accept = {
-3: 0
+3: 20
 }
 stats_cancel = {
-3: 50
+3: 30
 }
 next_card_index_accept = 1
 next_card_index_cancel = 2
+rand_min_study = 10
+rand_min_bad = 5
 
 [node name="CardInformation2" type="Node" parent="."]
 script = ExtResource( 3 )
@@ -28,13 +30,15 @@ text = "Elegiste salir un rato y volver a retomar, pero te invitaron a ir a Birg
 textAccept = "Irse de gira"
 textCancel = "Meterle al estudio"
 stats_accept = {
-3: 0
+3: 19
 }
 stats_cancel = {
-3: 75
+3: 7
 }
 next_card_index_accept = 3
 next_card_index_cancel = 4
+rand_min_study = 5
+rand_min_bad = 10
 
 [node name="CardInformation3" type="Node" parent="."]
 script = ExtResource( 3 )
@@ -42,13 +46,15 @@ text = "Practicaste 2 de 4 ejercicios, agarrás tu celular y te volvieron a invi
 textAccept = "Irse de gira"
 textCancel = "Meterle al estudio"
 stats_accept = {
-3: 0
+3: 19
 }
 stats_cancel = {
-3: 25
+3: 13
 }
 next_card_index_accept = 3
 next_card_index_cancel = 4
+rand_min_study = 5
+rand_min_bad = 10
 
 [node name="CardInformation4" type="Node" parent="."]
 script = ExtResource( 3 )
@@ -57,24 +63,27 @@ textAccept = "Escabiar hasta desfallecer"
 textCancel = "Estudiar hasta desfallecer"
 stats_accept = {
 2: -100,
-3: 0
+3: 23
 }
 stats_cancel = {
-3: 25
+3: 14
 }
 next_card_index_accept = -1
 next_card_index_cancel = -1
+rand_min_study = 7
+rand_min_bad = 12
 
 [node name="CardInformation5" type="Node" parent="."]
 script = ExtResource( 3 )
 text = "Ya practicaste 3 de 4 ejercicios, pero que tus amigos te insisten una vez más, ¿Cuál es tu decisión?"
-textAccept = "Ortivarte"
-textCancel = "Dártela en la pera"
+textAccept = "Dartela en la pera"
+textCancel = "Ortivarte"
 stats_accept = {
-3: 25
+3: 17
 }
 stats_cancel = {
-3: 0
+3: 9
 }
 next_card_index_accept = -1
 next_card_index_cancel = 3
+rand_min_bad = 6

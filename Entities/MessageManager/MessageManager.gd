@@ -22,7 +22,7 @@ func _ready():
 		card.set_parent(self)
 
 func game_over_message(state):
-	if state["stats"][StatManager.Stats.EXERCISES] == 100:
+	if state["stats"][StatManager.Stats.EXERCISES] < 50:
 		return "easy"
 	else:
 		return "hard"

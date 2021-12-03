@@ -12,6 +12,9 @@ export var next_card_index_cancel: int = 0
 export var upper_stats: Dictionary = {}
 export var lower_stats: Dictionary = {}
 export var tags: Array = []
+export var rand_min_study: int
+export var rand_min_bad: int
+
 var next_card_index = -1
 
 func accept():

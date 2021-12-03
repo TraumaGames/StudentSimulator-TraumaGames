@@ -24,13 +24,20 @@ func update_values(text, textAccept, textCancel):
 	buttonAccept.text = textAccept
 	buttonCancel.text = textCancel
 
+func random_int(Min, Max):
+	var value = randi() % (Max - Min + 1) + Min
+	return value
+	
+func assoc(value:int):
+	return {3:value}
+
 func _on_Accept_pressed():
 	card_information.accept()
-	_on_select(card_information.stats_accept)
+	_on_select(assoc(random_int(card_information.rand_min_bad,card_information.stats_accept[3])))
 
 func _on_Cancel_pressed():
 	card_information.cancel()
-	_on_select(card_information.stats_cancel)
+	_on_select(assoc(random_int(card_information.rand_min_study,card_information.stats_cancel[3])))
 
 func _on_select(stats_select):
 	self.hide()

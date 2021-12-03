@@ -79,10 +79,6 @@ margin_right = 177.0
 margin_bottom = 57.785
 
 [node name="OpenedQbook" parent="." instance=ExtResource( 14 )]
-margin_left = -497.23
-margin_top = 302.353
-margin_right = 501.77
-margin_bottom = 857.353
 
 [node name="InitSound" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 2 )
