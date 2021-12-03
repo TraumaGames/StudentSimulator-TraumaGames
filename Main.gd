@@ -11,8 +11,7 @@ onready var opened_qbook: Node =$OpenedQbook
 onready var init_sound :AudioStreamPlayer = $InitSound
 onready var qbook_open : AudioStreamPlayer = $QbookOpened
 onready var button_play : AudioStreamPlayer = $ButtonSound
-
-var day = 1
+onready var calendar: Calendar = $Calendar
 
 func _ready():
 	_set_initial_state()
@@ -42,9 +41,8 @@ func _on_QBook_pressed():
 	qbook_open.play()
 	opened_qbook.open()
 
-
 func _on_OpenedQbook_close_card(stats_update):
-	day += 1
+	calendar.set_next_day()
 	stat_manager.update_stats(stats_update)
 	opened_qbook.next_card()
 	if opened_qbook.is_empty_card():
