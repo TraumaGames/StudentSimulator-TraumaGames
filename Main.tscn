@@ -126,6 +126,9 @@ margin_top = -57.215
 margin_right = 177.0
 margin_bottom = 57.785
 
+[node name="Calendar" parent="." instance=ExtResource( 16 )]
+initial_date = 22
+
 [node name="OpenedQbook" parent="." instance=ExtResource( 14 )]
 margin_left = -497.23
 margin_top = 302.353
@@ -145,9 +148,6 @@ stream = ExtResource( 8 )
 
 [node name="NewMessage" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 15 )
-
-[node name="Calendar" parent="." instance=ExtResource( 16 )]
-initial_date = 22
 
 [connection signal="reset_game" from="HUD" to="." method="reset_game"]
 [connection signal="start_game" from="HUD" to="." method="start_game"]
