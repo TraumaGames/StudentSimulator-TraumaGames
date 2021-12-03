@@ -46,7 +46,7 @@ func generate_exam(card_exam,result):
 		self.index= 0
 		self.calification=0
 		evaluate_exam()
-		card_result.initialize("Tu calificacion es: "+str(calification), "Continuar")
+		card_result.initialize("Tu calificacion es: "+str(calification), "Finalizar")
 		card_result.show_card()
 		
 func generate_card(card_exam,type):
