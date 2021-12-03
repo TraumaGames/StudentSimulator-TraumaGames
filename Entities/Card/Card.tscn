@@ -4,7 +4,7 @@
 [ext_resource path="res://assets/fonts/Roboto-Regular.ttf" type="DynamicFontData" id=2]
 [ext_resource path="res://Entities/Card/Card.gd" type="Script" id=3]
 [ext_resource path="res://Entities/MenuButton/MenuButton.tscn" type="PackedScene" id=4]
-[ext_resource path="res://assets/sounds/silvido.wav" type="AudioStream" id=5]
+[ext_resource path="res://assets/sounds/silvido.mp3" type="AudioStream" id=5]
 
 [sub_resource type="DynamicFont" id=1]
 size = 35
@@ -27,7 +27,7 @@ tracks/0/keys = {
 
 [sub_resource type="Animation" id=3]
 resource_name = "show"
-length = 0.3
+length = 0.6
 tracks/0/type = "value"
 tracks/0/path = NodePath(".:rect_scale")
 tracks/0/interp = 1
@@ -52,7 +52,7 @@ tracks/1/keys = {
 "start_offset": 0.0,
 "stream": ExtResource( 5 )
 } ],
-"times": PoolRealArray( -0.4 )
+"times": PoolRealArray( 0 )
 }
 
 [node name="Card" type="Control"]
@@ -124,6 +124,7 @@ anims/show = SubResource( 3 )
 
 [node name="NewMessage" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 5 )
+volume_db = -1.867
 
 [connection signal="pressed" from="CenterAccept/Accept" to="." method="_on_Accept_pressed"]
 [connection signal="pressed" from="CenterCancel/Cancel" to="." method="_on_Cancel_pressed"]

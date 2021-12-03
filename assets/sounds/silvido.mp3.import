@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/silvido.mp3-a7dfc808328827fa22b02bb69b8d5988.mp3str"
+
+[deps]
+
+source_file="res://assets/sounds/silvido.mp3"
+dest_files=[ "res://.import/silvido.mp3-a7dfc808328827fa22b02bb69b8d5988.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

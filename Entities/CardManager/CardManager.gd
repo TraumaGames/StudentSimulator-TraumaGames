@@ -11,20 +11,19 @@ var cardInformationManager: CardInformationManager
 var statManager: StatManager
 var tagManager: TagManager
 var currentCard
-var click
+var button_click
 
 func _ready():
 	for card in get_children():
 		cards[card.get_type()] = card
 
-func initialize(tag_manager: TagManager, stat_manager: StatManager, card_information_manager: CardInformationManager,button_click:AudioStreamPlayer):
+func initialize(tag_manager: TagManager, stat_manager: StatManager, card_information_manager: CardInformationManager, button_click):
 	cardInformationManager = card_information_manager
 	statManager = stat_manager
 	tagManager = tag_manager
-	click = button_click
+	self.button_click = button_click
 
 func next_card():
-	click.play()
 	var newInformation = cardInformationManager.next_card({"stats": statManager.stats, "tags": tagManager.currentTags})
 	set_current_card()
 
@@ -48,4 +47,5 @@ func show_card():
 	currentCard.show_card()
 
 func _on_Card_close_card(stats_select):
+	button_click.play()
 	emit_signal("close_card", stats_select)

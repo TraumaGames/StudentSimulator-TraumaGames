@@ -14,9 +14,5 @@ __meta__ = {
 }
 
 [node name="Card" parent="." instance=ExtResource( 2 )]
-margin_left = 2.0
-margin_top = 1.0
-margin_right = 2.0
-margin_bottom = 1.0
 
 [connection signal="close_card" from="Card" to="." method="_on_Card_close_card"]
