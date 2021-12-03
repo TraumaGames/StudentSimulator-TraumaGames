@@ -175,8 +175,8 @@ question = "9) Tipo de apply"
 buton1_Text = "a -> a -> a -> a"
 buton2_Text = "a -> a -> (a -> a)"
 buton3_Text = "a -> a"
-buton4_Text = "(a -> a) a -> a"
-correct = "(a -> a) a -> a"
+buton4_Text = "(a -> a) -> a -> a"
+correct = "(a -> a) -> a -> a"
 
 [node name="Exercise10_hard" type="Node" parent="."]
 script = ExtResource( 2 )
@@ -184,5 +184,5 @@ question = "10) Cuanto el sistema es compatible determinado?"
 buton1_Text = "determinante mayor que cero"
 buton2_Text = "determinante es menor a cero"
 buton3_Text = "determinante es cero"
-buton4_Text = "siempre que la matriz es escalonada"
+buton4_Text = "si la matriz es escalonada"
 correct = "determinante mayor que cero"
