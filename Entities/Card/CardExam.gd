@@ -1,35 +1,34 @@
 extends Control
 
 onready var label:Label= $Label 
-onready var buton1:Button = $CenterContainer/Button
-onready var buton2:Button = $CenterContainer2/Button
-onready var buton3:Button = $CenterContainer3/Button
-onready var buton4:Button = $CenterContainer4/Button
+onready var button1:ButtonMenu = $CenterContainer/MenuButton
+onready var button2:ButtonMenu = $CenterContainer2/MenuButton2
+onready var button3:ButtonMenu = $CenterContainer3/MenuButton3
+onready var button4:ButtonMenu = $CenterContainer4/MenuButton4
 signal save_result(result)
 
-func initialize(text,buton1,buton2,buton3,buton4):
+func initialize(text,button1,button2,button3,button4):
 	self.label.text= text
-	self.buton1.text=buton1
-	self.buton2.text=buton2
-	self.buton3.text=buton3
-	self.buton4.text=buton4
+	self.button1.text=button1
+	self.button2.text=button2
+	self.button3.text=button3
+	self.button4.text=button4
 
 
-func _on_Button_pressed():
+func _on_MenuButton_pressed():
+	_button_pressed(button1)
+
+func _on_MenuButton2_pressed():
+	_button_pressed(button2)
+
+
+func _on_MenuButton3_pressed():
+	_button_pressed(button3)
+
+
+func _on_MenuButton4_pressed():
+	_button_pressed(button4)
+	
+func _button_pressed(button: ButtonMenu):
 	self.hide()
-	emit_signal("save_result",buton1.text)
-
-
-func _on_Button2_pressed():
-	self.hide()
-	emit_signal("save_result",buton2.text)
-
-
-func _on_Button3_pressed():
-	self.hide()
-	emit_signal("save_result",buton3.text)
-
-
-func _on_Button4_pressed():
-	self.hide()
-	emit_signal("save_result",buton4.text)
+	emit_signal("save_result",button.text)

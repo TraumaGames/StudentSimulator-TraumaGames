@@ -44,7 +44,8 @@ func is_empty_card():
 
 func show_card():
 	#show()
-	currentCard.show_card()
+	if currentCard != null:
+		currentCard.show_card()
 
 func _on_Card_close_card(stats_select):
 	button_click.play()

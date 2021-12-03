@@ -25,6 +25,8 @@ func reset_game():
 	_set_initial_state()
 
 func finish_game():
+	qbook_open.play()
+	opened_qbook.just_open()
 	hud.game_over({"stats": stat_manager.stats})
 
 func _set_initial_state():
@@ -45,6 +47,6 @@ func _on_OpenedQbook_close_card(stats_update):
 	calendar.set_next_day()
 	stat_manager.update_stats(stats_update)
 	opened_qbook.next_card()
+	opened_qbook.close()
 	if opened_qbook.is_empty_card():
 		finish_game()
-	opened_qbook.close()

@@ -13,9 +13,12 @@ func _on_CardManager_close_card(stats_select):
 	emit_signal("close_card", stats_select)
 
 func open():
+	just_open()
+	timer.start()
+
+func just_open():
 	show()
 	animation_player.play("open")
-	timer.start()
 
 func close():
 	animation_player.play_backwards("open")
@@ -40,5 +43,5 @@ func _on_Timer_timeout():
 	card_manager.show_card()
 
 
-func _on_CloseTimer_timeout():
-	hide()
+#func _on_CloseTimer_timeout():
+#	hide()

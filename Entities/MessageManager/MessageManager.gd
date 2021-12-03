@@ -52,7 +52,6 @@ func generate_exam(card_exam,result):
 func generate_card(card_exam,type):
 	self.type_exam=type
 	if type=="easy":
-		
 		easy_exam[index].init_exam(card_exam)
 	else:
 		hard_exam[index].init_exam(card_exam)
