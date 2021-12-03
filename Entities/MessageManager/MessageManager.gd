@@ -38,17 +38,17 @@ func save(result):
 func generate_exam(card_exam,result):
 	if index<10 : 
 		generate_card(card_exam,result)
-		card_exam.show()
+		card_exam.show_card()
 	else :
 		card_exam.hide()
 		self.index= 0
 		self.calification=0
 		evaluate_exam()
-		card_result.initialize("Tu calificacion es: "+str(calification), "Continuar")
 		calification=0 
 		results=[]
 		exam_results=[]
-		card_result.show()
+		card_result.initialize("Tu calificacion es: "+str(calification), "Finalizar")
+		card_result.show_card()
 		
 func generate_card(card_exam,type):
 	self.type_exam=type

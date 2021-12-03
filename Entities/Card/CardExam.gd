@@ -5,6 +5,7 @@ onready var button1:ButtonMenu = $CenterContainer/MenuButton
 onready var button2:ButtonMenu = $CenterContainer2/MenuButton2
 onready var button3:ButtonMenu = $CenterContainer3/MenuButton3
 onready var button4:ButtonMenu = $CenterContainer4/MenuButton4
+onready var animation_player: AnimationPlayer = $AnimationPlayer
 signal save_result(result)
 
 func initialize(text,button1,button2,button3,button4):
@@ -13,6 +14,11 @@ func initialize(text,button1,button2,button3,button4):
 	self.button2.text=button2
 	self.button3.text=button3
 	self.button4.text=button4
+
+func show_card():
+	animation_player.stop()
+	show()
+	animation_player.play("show")
 
 
 func _on_MenuButton_pressed():
