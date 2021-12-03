@@ -57,18 +57,18 @@ script = ExtResource( 3 )
 question = "6) Que te parece este juego"
 buton1_Text = "aburre"
 buton2_Text = "divertidisimo"
-buton3_Text = "depende de julieta"
-buton4_Text = "mejor que el de delta software seguro"
+buton3_Text = "depende de los docentes"
+buton4_Text = "mejor que el primero seguro"
 correct = "divertidisimo"
 
 [node name="Exercise7_easy" type="Node" parent="."]
 script = ExtResource( 3 )
-question = "7) me canse de escribir"
-buton1_Text = "re si "
-buton2_Text = "amo escribir "
-buton3_Text = "no podria hacerlo otro"
-buton4_Text = "ya me duelen los dedos"
-correct = "re si"
+question = "7) En cuanto NO se hizo Roma"
+buton1_Text = "en una semana"
+buton2_Text = "en un dia"
+buton3_Text = "en una decada"
+buton4_Text = "en una noche"
+correct = "en un dia"
 
 [node name="Exercise8_easy" type="Node" parent="."]
 script = ExtResource( 3 )
@@ -100,18 +100,18 @@ correct = "1 y -1"
 [node name="Exercise1_hard" type="Node" parent="."]
 script = ExtResource( 2 )
 question = "1) Cual es el tipo de foldr"
-buton1_Text = "(a -> b) -> b -> [a] -> b"
+buton1_Text = "(a -> b -> b) -> b -> [a] -> b"
 buton2_Text = "a -> b -> b -> b -> [a] -> b"
-buton3_Text = "(a -> b -> b) -> b -> [a] -> b"
+buton3_Text = "(a -> b) -> b -> [a] -> b"
 buton4_Text = "(a -> a -> b) -> b -> a -> b"
 correct = "(a -> b -> b) -> b -> [a] -> b"
 
 [node name="Exercise2_hard" type="Node" parent="."]
 script = ExtResource( 2 )
 question = "2) cual es el codigo postal de san martin"
-buton1_Text = "1300"
+buton1_Text = "1650"
 buton2_Text = "1500"
-buton3_Text = "1650"
+buton3_Text = "1300"
 buton4_Text = "1872"
 correct = "1650"
 
@@ -128,61 +128,61 @@ correct = "4"
 script = ExtResource( 2 )
 question = "4)Que servicio provee subir una app a desarrollo "
 buton1_Text = "Jeropa"
-buton2_Text = "Heroku"
-buton3_Text = "SonarCloud"
+buton2_Text = "SonarCloud"
+buton3_Text = "Heroku"
 buton4_Text = "React"
 correct = "Heroku"
 
 [node name="Exercise5_hard" type="Node" parent="."]
 script = ExtResource( 2 )
-question = "5) No se aprueba"
-buton1_Text = "1"
-buton2_Text = "2"
-buton3_Text = "3"
-buton4_Text = "4"
-correct = "1"
+question = "5) Cual es el valor de Pi"
+buton1_Text = "3,415192"
+buton2_Text = "3"
+buton3_Text = "3,145129"
+buton4_Text = "3,141592"
+correct = "3,141592"
 
 [node name="Exercise6_hard" type="Node" parent="."]
 script = ExtResource( 2 )
-question = "6) Se recursa"
-buton1_Text = "1"
-buton2_Text = "2"
-buton3_Text = "3"
-buton4_Text = "4"
+question = "6) Cuanto oro cuesta un esqueleto en HOMM3?"
+buton1_Text = "55"
+buton2_Text = "60"
+buton3_Text = "40"
+buton4_Text = "100"
 correct = "1"
 
 [node name="Exercise7_hard" type="Node" parent="."]
 script = ExtResource( 2 )
-question = "7) Adios profe"
-buton1_Text = "1"
-buton2_Text = "2"
-buton3_Text = "3"
-buton4_Text = "4"
-correct = "1"
+question = "7) Nombre del matematico que le da nombre a la currificacion"
+buton1_Text = "Haskell Brooks Curry"
+buton2_Text = "Howard Brick Curry"
+buton3_Text = "Haskell Bernard Curry"
+buton4_Text = "Harvy Brian Curry"
+correct = "Haskell Brooks Curry"
 
 [node name="Exercise8_hard" type="Node" parent="."]
 script = ExtResource( 2 )
-question = "8)Fue un privilegio cursar con ustedes"
-buton1_Text = "1"
-buton2_Text = "2"
-buton3_Text = "3"
-buton4_Text = "4"
-correct = "1"
+question = "8) Cuanto mide el Aconcagua"
+buton1_Text = "6,961 m"
+buton2_Text = "6,625 m"
+buton3_Text = "6,526 m"
+buton4_Text = "6,271 m"
+correct = "6,961 m"
 
 [node name="Exercise9_hard" type="Node" parent="."]
 script = ExtResource( 2 )
-question = "9) Bienvenida vacaciones"
-buton1_Text = "1"
-buton2_Text = "2"
-buton3_Text = "3"
-buton4_Text = "4"
-correct = "1"
+question = "9) Tipo de apply"
+buton1_Text = "a -> a -> a -> a"
+buton2_Text = "a -> a -> (a -> a)"
+buton3_Text = "a -> a"
+buton4_Text = "(a -> a) a -> a"
+correct = "(a -> a) a -> a"
 
 [node name="Exercise10_hard" type="Node" parent="."]
 script = ExtResource( 2 )
-question = "10) en que me anoto"
-buton1_Text = "1"
-buton2_Text = "2"
-buton3_Text = "3"
-buton4_Text = "4"
-correct = "1"
+question = "10) Cuanto el sistema es compatible determinado?"
+buton1_Text = "determinante mayor que cero"
+buton2_Text = "determinante es menor a cero"
+buton3_Text = "determinante es cero"
+buton4_Text = "siempre que la matriz es escalonada"
+correct = "determinante mayor que cero"
