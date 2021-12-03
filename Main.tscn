@@ -120,6 +120,8 @@ margin_right = 177.0
 margin_bottom = 57.785
 
 [node name="Calendar" parent="." instance=ExtResource( 16 )]
+margin_top = 119.8
+margin_bottom = 333.8
 initial_date = 22
 
 [node name="OpenedQbook" parent="." instance=ExtResource( 14 )]

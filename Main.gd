@@ -22,6 +22,7 @@ func start_game():
 	stat_bars_manager.show()
 	
 func reset_game():
+	opened_qbook.close()
 	_set_initial_state()
 
 func finish_game():
@@ -30,6 +31,8 @@ func finish_game():
 	hud.game_over({"stats": stat_manager.stats})
 
 func _set_initial_state():
+	calendar.reset()
+	init_sound.play()
 	stat_bars_manager.hide()
 	opened_qbook.initialize(tag_manager, stat_manager, card_information_manager,button_play)
 	stat_manager.reset()

@@ -46,6 +46,5 @@ func _on_CardExam_save_result(text):
 
 
 func _on_CardUnary_new_game():
-	world.interfaz_on()	
-	#emit_signal("reset_game")
-	#emit_signal("start_game")
+  emit_signal("reset_game")
+  hud_container.show()
