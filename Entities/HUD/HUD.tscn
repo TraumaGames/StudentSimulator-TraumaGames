@@ -50,10 +50,10 @@ custom_constants/separation = 0
 margin_right = 324.0
 margin_bottom = 48.0
 size_flags_horizontal = 4
-custom_fonts/font = SubResource( 1 )
 custom_colors/font_color = Color( 0.647059, 0.870588, 0.67451, 1 )
 custom_colors/font_outline_modulate = Color( 0.262745, 0.368627, 0.215686, 1 )
 custom_colors/font_color_shadow = Color( 0.282353, 0.345098, 0.270588, 1 )
+custom_fonts/font = SubResource( 1 )
 text = "Student Simulator"
 
 [node name="Buttons" type="VBoxContainer" parent="CenterContainer/PanelContainer/VBoxContainer"]

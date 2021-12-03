@@ -81,14 +81,15 @@ position = Vector2( 362.741, 194.916 )
 texture = ExtResource( 1 )
 
 [node name="Label" type="Label" parent="."]
-margin_left = 2.94586
-margin_top = 52.956
-margin_right = 720.946
-margin_bottom = 250.956
+margin_left = 3.0
+margin_top = 53.0
+margin_right = 721.0
+margin_bottom = 223.0
 custom_colors/font_color = Color( 0, 0, 0, 1 )
 custom_fonts/font = SubResource( 1 )
 text = "hola
 "
+autowrap = true
 __meta__ = {
 "_edit_use_anchors_": false
 }
