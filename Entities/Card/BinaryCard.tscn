@@ -1,0 +1,44 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Node.gd" type="Script" id=1]
+[ext_resource path="res://Entities/MenuButton/MenuButton.tscn" type="PackedScene" id=2]
+
+[node name="BinaryCard" type="Control"]
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CenterAccept" type="CenterContainer" parent="."]
+margin_left = -306.282
+margin_top = 102.0
+margin_right = -1.28241
+margin_bottom = 180.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Accept" parent="CenterAccept" instance=ExtResource( 2 )]
+margin_left = 26.0
+margin_top = 7.0
+margin_right = 277.0
+margin_bottom = 70.0
+rect_min_size = Vector2( 200, 50 )
+size_flags_vertical = 6
+
+[node name="CenterCancel" type="CenterContainer" parent="."]
+margin_left = 2.76724
+margin_top = 102.0
+margin_right = 307.767
+margin_bottom = 180.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Cancel" parent="CenterCancel" instance=ExtResource( 2 )]
+margin_left = 26.0
+margin_top = 7.0
+margin_right = 277.0
+margin_bottom = 70.0
+rect_min_size = Vector2( 200, 50 )
+text = ""

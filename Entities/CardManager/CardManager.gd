@@ -4,7 +4,7 @@ class_name CardManager
 
 signal close_card(stats_select)
 
-enum {BINARY_CARD}
+enum {BINARY_CARD, CARD_EXAM}
 export var cards: Dictionary = {}
 
 var cardInformationManager: CardInformationManager

@@ -9,7 +9,8 @@ var _initialStats: Dictionary = {
 	Stats.ENERGY: 100,
 	Stats.SELF_ESTEEM: 50,
 	Stats.MENTAL_HEALTH: 100,
-	Stats.EXERCISES: 0
+	Stats.EXERCISES: 0,
+	Stats.EXAM_POINTS: 0
 }
 
 var stats = _initialStats.duplicate()

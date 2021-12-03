@@ -41,10 +41,19 @@ func _on_QBook_pressed():
 	qbook_open.play()
 	opened_qbook.open()
 
+
 func _on_OpenedQbook_close_card(stats_update):
 	calendar.set_next_day()
-	stat_manager.update_stats(stats_update)
-	opened_qbook.next_card()
+	_close_card(stats_update)
+#	if opened_qbook.is_empty_card():
+#		finish_game()
+	opened_qbook.close()
+	
+func _on_OpenedQbook_close_card_exam(stats_update):
+	_close_card(stats_update)
 	if opened_qbook.is_empty_card():
 		finish_game()
-	opened_qbook.close()
+
+func _close_card(stats_update):
+	stat_manager.update_stats(stats_update)
+	opened_qbook.next_card()

@@ -14,5 +14,6 @@ __meta__ = {
 }
 
 [node name="Card" parent="." instance=ExtResource( 2 )]
+visible = false
 
 [connection signal="close_card" from="Card" to="." method="_on_Card_close_card"]

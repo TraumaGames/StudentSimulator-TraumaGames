@@ -1,4 +1,5 @@
 extends TextureButton
+class_name ButtonMenu
 
 
 export (String) var text:String setget set_text

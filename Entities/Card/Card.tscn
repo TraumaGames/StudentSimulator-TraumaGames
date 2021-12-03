@@ -85,6 +85,7 @@ __meta__ = {
 }
 
 [node name="CenterAccept" type="CenterContainer" parent="."]
+visible = false
 margin_left = -306.282
 margin_top = 102.0
 margin_right = -1.28241
@@ -94,6 +95,7 @@ __meta__ = {
 }
 
 [node name="Accept" parent="CenterAccept" instance=ExtResource( 4 )]
+visible = false
 margin_left = 26.0
 margin_top = 7.0
 margin_right = 277.0
@@ -102,6 +104,7 @@ rect_min_size = Vector2( 200, 50 )
 size_flags_vertical = 6
 
 [node name="CenterCancel" type="CenterContainer" parent="."]
+visible = false
 margin_left = 2.76724
 margin_top = 102.0
 margin_right = 307.767
@@ -111,6 +114,7 @@ __meta__ = {
 }
 
 [node name="Cancel" parent="CenterCancel" instance=ExtResource( 4 )]
+visible = false
 margin_left = 26.0
 margin_top = 7.0
 margin_right = 277.0
