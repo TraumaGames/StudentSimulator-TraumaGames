@@ -59,7 +59,7 @@ buton1_Text = "aburre"
 buton2_Text = "divertidisimo"
 buton3_Text = "depende de julieta"
 buton4_Text = "mejor que el de delta software seguro"
-correct = "divertidismo"
+correct = "divertidisimo"
 
 [node name="Exercise7_easy" type="Node" parent="."]
 script = ExtResource( 3 )
