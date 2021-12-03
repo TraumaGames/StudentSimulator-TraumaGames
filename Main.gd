@@ -8,12 +8,18 @@ onready var card = $Card
 onready var player: Player = $Player
 onready var stat_bars_manager: StatBarsManager = $StatBarsManager
 onready var opened_qbook: Node =$OpenedQbook
+onready var init_sound :AudioStreamPlayer = $InitSound
+onready var qbook_open : AudioStreamPlayer = $QbookOpened
+onready var button_play : AudioStreamPlayer = $ButtonSound
+
 var day = 1
 
 func _ready():
 	_set_initial_state()
 
 func start_game():
+	button_play.play()
+	init_sound.stop()
 	stat_bars_manager.show()
 	
 func reset_game():
@@ -24,7 +30,7 @@ func finish_game():
 
 func _set_initial_state():
 	stat_bars_manager.hide()
-	opened_qbook.initialize(tag_manager, stat_manager, card_information_manager)
+	opened_qbook.initialize(tag_manager, stat_manager, card_information_manager,button_play)
 	stat_manager.reset()
 	opened_qbook.reset()
 
@@ -33,6 +39,7 @@ func _on_StatManager_stats_change(stats):
 	opened_qbook.update_stats(stats)
 
 func _on_QBook_pressed():
+	qbook_open.play()
 	opened_qbook.open()
 
 

@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/sound_Qbook_ON.mp3-48348a3d2ec0eff13276b31823843cc0.mp3str"
+
+[deps]
+
+source_file="res://assets/sounds/sound_Qbook_ON.mp3"
+dest_files=[ "res://.import/sound_Qbook_ON.mp3-48348a3d2ec0eff13276b31823843cc0.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

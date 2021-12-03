@@ -1,9 +1,10 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=9 format=2]
 
 [ext_resource path="res://assets/art/card/card.svg" type="Texture" id=1]
 [ext_resource path="res://assets/fonts/Roboto-Regular.ttf" type="DynamicFontData" id=2]
 [ext_resource path="res://Entities/Card/Card.gd" type="Script" id=3]
 [ext_resource path="res://Entities/MenuButton/MenuButton.tscn" type="PackedScene" id=4]
+[ext_resource path="res://assets/sounds/silvido.wav" type="AudioStream" id=5]
 
 [sub_resource type="DynamicFont" id=1]
 size = 35
@@ -38,6 +39,20 @@ tracks/0/keys = {
 "transitions": PoolRealArray( 1, 1 ),
 "update": 0,
 "values": [ Vector2( 1e-05, 1e-05 ), Vector2( 1, 1 ) ]
+}
+tracks/1/type = "audio"
+tracks/1/path = NodePath("NewMessage")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"clips": [ {
+"end_offset": 0.0,
+"start_offset": 0.0,
+"stream": ExtResource( 5 )
+} ],
+"times": PoolRealArray( -0.4 )
 }
 
 [node name="Card" type="Control"]
@@ -106,6 +121,9 @@ text = ""
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 anims/RESET = SubResource( 2 )
 anims/show = SubResource( 3 )
+
+[node name="NewMessage" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 5 )
 
 [connection signal="pressed" from="CenterAccept/Accept" to="." method="_on_Accept_pressed"]
 [connection signal="pressed" from="CenterCancel/Cancel" to="." method="_on_Cancel_pressed"]

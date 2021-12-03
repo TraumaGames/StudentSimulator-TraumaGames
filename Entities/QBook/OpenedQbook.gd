@@ -30,8 +30,8 @@ func next_card():
 func is_empty_card():
 	return card_manager.is_empty_card()
 
-func initialize(tag_manager, stat_manager, card_information_manager):
-	card_manager.initialize(tag_manager, stat_manager, card_information_manager)
+func initialize(tag_manager, stat_manager, card_information_manager,button_click):
+	card_manager.initialize(tag_manager, stat_manager, card_information_manager,button_click)
 	
 func reset():
 	card_manager.reset()
