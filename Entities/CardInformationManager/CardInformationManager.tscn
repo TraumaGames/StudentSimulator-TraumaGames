@@ -17,7 +17,8 @@ stats_accept = {
 3: 20
 }
 stats_cancel = {
-3: 30
+3: 30,
+4: 25
 }
 next_card_index_accept = 1
 next_card_index_cancel = 2
@@ -33,7 +34,8 @@ stats_accept = {
 3: 19
 }
 stats_cancel = {
-3: 7
+3: 7,
+4: 25
 }
 next_card_index_accept = 3
 next_card_index_cancel = 4
@@ -49,7 +51,8 @@ stats_accept = {
 3: 19
 }
 stats_cancel = {
-3: 13
+3: 13,
+4: 25
 }
 next_card_index_accept = 3
 next_card_index_cancel = 4
@@ -66,7 +69,8 @@ stats_accept = {
 3: 23
 }
 stats_cancel = {
-3: 14
+3: 14,
+4: 25
 }
 next_card_index_accept = -1
 next_card_index_cancel = -1
@@ -82,7 +86,8 @@ stats_accept = {
 3: 17
 }
 stats_cancel = {
-3: 9
+3: 9,
+4: 25
 }
 next_card_index_accept = -1
 next_card_index_cancel = 3

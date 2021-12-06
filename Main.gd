@@ -12,6 +12,7 @@ onready var init_sound :AudioStreamPlayer = $InitSound
 onready var qbook_open : AudioStreamPlayer = $QbookOpened
 onready var button_play : AudioStreamPlayer = $ButtonSound
 onready var calendar: Calendar = $Calendar
+onready var books: Books = $Books
 
 func _ready():
 	_set_initial_state()
@@ -41,6 +42,7 @@ func _set_initial_state():
 func _on_StatManager_stats_change(stats):
 	stat_bars_manager.update_stats(stats)
 	opened_qbook.update_stats(stats)
+	books.update_stats(stats)
 
 func _on_QBook_pressed():
 	qbook_open.play()

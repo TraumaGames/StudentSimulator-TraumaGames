@@ -17,11 +17,21 @@ export var rand_min_bad: int
 
 var next_card_index = -1
 
+func random_int(Min, Max):
+	var value = randi() % (Max - Min + 1) + Min
+	return value
+
 func accept():
 	next_card_index = next_card_index_accept
+	var stats = stats_accept.duplicate()
+	stats[3] = random_int(rand_min_bad, stats_accept[3])
+	return stats
 
 func cancel():
 	next_card_index = next_card_index_cancel
+	var stats = stats_cancel.duplicate()
+	stats[3] = random_int(rand_min_study, stats_accept[3])
+	return stats
 
 func reset():
 	next_card_index = -1
