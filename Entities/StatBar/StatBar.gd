@@ -24,3 +24,4 @@ func _set_value(new_value: float):
 
 func _get_value():
 	return value
+	

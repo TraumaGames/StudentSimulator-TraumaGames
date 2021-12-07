@@ -10,3 +10,4 @@ onready var statBars = {
 func update_stats(stats):
 	for stat in statBars.keys():
 		statBars[stat].value = stats[stat]
+

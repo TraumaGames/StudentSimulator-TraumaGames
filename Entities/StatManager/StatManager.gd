@@ -24,3 +24,24 @@ func update_stats(stats_update: Dictionary):
 func reset():
 	stats = _initialStats.duplicate()
 	emit_signal("stats_change", stats)
+
+func _input(event):
+	if event.is_action_pressed("max_difficulty"):
+		self.stats = _max_difficulty_stats.duplicate()
+	if event.is_action_pressed("low_difficulty"):
+		self.stats = _low_difficulty_stats.duplicate()
+
+##dev funcs
+var _max_difficulty_stats: Dictionary = {
+	Stats.ENERGY: 100,
+	Stats.SELF_ESTEEM: 50,
+	Stats.MENTAL_HEALTH: 100,
+	Stats.EXERCISES: 51
+}
+
+var _low_difficulty_stats: Dictionary = {
+	Stats.ENERGY: 100,
+	Stats.SELF_ESTEEM: 50,
+	Stats.MENTAL_HEALTH: 100,
+	Stats.EXERCISES: 1
+}
