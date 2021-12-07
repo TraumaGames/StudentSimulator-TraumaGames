@@ -35,7 +35,7 @@ stats_accept = {
 stats_cancel = {
 3: 7
 }
-next_card_index_accept = 3
+next_card_index_accept = 5
 next_card_index_cancel = 4
 rand_min_study = 5
 rand_min_bad = 10
@@ -51,7 +51,7 @@ stats_accept = {
 stats_cancel = {
 3: 13
 }
-next_card_index_accept = 3
+next_card_index_accept = 5
 next_card_index_cancel = 4
 rand_min_study = 5
 rand_min_bad = 10
@@ -84,6 +84,63 @@ stats_accept = {
 stats_cancel = {
 3: 9
 }
-next_card_index_accept = -1
+next_card_index_accept = 3
+next_card_index_cancel = 7
+rand_min_bad = 6
+
+[node name="CardInformation6" type="Node" parent="."]
+script = ExtResource( 3 )
+text = "Te pasaste un poco de copas y terminaste dado vuelta en lo de tu amigo. Cuando te levantas te invitan al cumpleaños de un primo hoy a la noche."
+textAccept = "Seguir la gira"
+textCancel = "Frenar por ahora"
+stats_accept = {
+3: 17
+}
+stats_cancel = {
+3: 9
+}
+next_card_index_accept = 6
 next_card_index_cancel = 3
+upper_stats = {
+}
+lower_stats = {
+}
+rand_min_bad = 6
+
+[node name="CardInformation7" type="Node" parent="."]
+script = ExtResource( 3 )
+text = "Cuando recobras la conciencia, te fijas y faltan horas para el parcial. Salis de una a la facu?"
+textAccept = "Rajar a la facu"
+textCancel = "Ducha y a correr"
+stats_accept = {
+3: 17
+}
+stats_cancel = {
+3: 9
+}
+next_card_index_accept = -1
+next_card_index_cancel = -1
+upper_stats = {
+}
+lower_stats = {
+}
+rand_min_bad = 6
+
+[node name="CardInformation8" type="Node" parent="."]
+script = ExtResource( 3 )
+text = "Ya estudiaste bastante. Te tomas el dia para despejar o seguis dandole?"
+textAccept = "Relajarse un cacho"
+textCancel = "A quemar esos parpados"
+stats_accept = {
+3: 17
+}
+stats_cancel = {
+3: 9
+}
+next_card_index_accept = -1
+next_card_index_cancel = -1
+upper_stats = {
+}
+lower_stats = {
+}
 rand_min_bad = 6
