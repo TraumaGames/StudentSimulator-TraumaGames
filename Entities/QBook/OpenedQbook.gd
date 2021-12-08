@@ -1,4 +1,4 @@
-extends TextureRect
+extends Control
 
 
 signal close_card(stats_select)
@@ -8,6 +8,7 @@ onready var card_manager: CardManager = $CardManager
 onready var timer: Timer = $Timer
 onready var close_timer: Timer = $CloseTimer
 onready var player: Player = $Player
+onready var texture_rect: TextureRect = $TextureRect
 
 func _on_CardManager_close_card(stats_select):
 	emit_signal("close_card", stats_select)

@@ -1,0 +1,21 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://Entities/Books/Books.gd" type="Script" id=1]
+[ext_resource path="res://assets/art/book/libros_desordenados-2.png" type="Texture" id=2]
+[ext_resource path="res://assets/art/book/libros_ordenados.png" type="Texture" id=3]
+[ext_resource path="res://assets/art/book/libros_ordenados-2.png" type="Texture" id=4]
+[ext_resource path="res://assets/art/book/libros_desordenados.png" type="Texture" id=5]
+
+[node name="Books" type="Control"]
+margin_right = 40.0
+margin_bottom = 40.0
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+books1 = ExtResource( 3 )
+books2 = ExtResource( 4 )
+books3 = ExtResource( 5 )
+books4 = ExtResource( 2 )
+
+[node name="Sprite" type="Sprite" parent="."]
