@@ -39,12 +39,18 @@ var _max_difficulty_stats: Dictionary = {
 	Stats.ENERGY: 100,
 	Stats.SELF_ESTEEM: 50,
 	Stats.MENTAL_HEALTH: 100,
-	Stats.EXERCISES: 51
+	Stats.EXERCISES: 51,
+	Stats.BOOKS: 0,
+	Stats.BOTTLES: 0,
+	Stats.STUDY: 0
 }
 
 var _low_difficulty_stats: Dictionary = {
 	Stats.ENERGY: 100,
 	Stats.SELF_ESTEEM: 50,
 	Stats.MENTAL_HEALTH: 100,
-	Stats.EXERCISES: 1
+	Stats.EXERCISES: 1,
+	Stats.BOOKS: 0,
+	Stats.BOTTLES: 0,
+	Stats.STUDY: 0
 }

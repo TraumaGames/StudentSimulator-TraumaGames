@@ -22,7 +22,6 @@ func _ready():
 
 func start_game():
 	button_play.play()
-	init_sound.stop()
 	stat_bars_manager.show()
 
 func reset_game():
