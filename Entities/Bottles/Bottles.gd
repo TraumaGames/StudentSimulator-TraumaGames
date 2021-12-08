@@ -11,16 +11,16 @@ onready var sprite: Sprite = $Sprite
 
 func update_stats(stats):
 	if stats[StatManager.Stats.BOTTLES] > 0 && stats[StatManager.Stats.BOTTLES] <= 25:
+		bottle_sound.play() if sprite.texture != bottles1 else null
 		sprite.texture = bottles1
-		bottle_sound.play()
 	elif stats[StatManager.Stats.BOTTLES] > 25 && stats[StatManager.Stats.BOTTLES] <= 50:
+		bottle_sound.play() if sprite.texture != bottles2 else null
 		sprite.texture = bottles2
-		bottle_sound.play()
 	elif stats[StatManager.Stats.BOTTLES] > 50 && stats[StatManager.Stats.BOTTLES] <= 75:
+		bottle_sound.play() if sprite.texture != bottles3 else null
 		sprite.texture = bottles3
-		bottle_sound.play()
 	elif stats[StatManager.Stats.BOTTLES] > 75:
+		bottle_sound.play() if sprite.texture != bottles4 else null
 		sprite.texture = bottles4
-		bottle_sound.play()
 	else:
 		sprite.texture = null

@@ -13,16 +13,16 @@ onready var sprite: Sprite = $Sprite
 
 func update_stats(stats):
 	if stats[StatManager.Stats.BOOKS] > 0 && stats[StatManager.Stats.BOOKS] <= 25:
+		book_sound.play() if sprite.texture != books1 else null
 		sprite.texture = books1
-		book_sound.play()
 	elif stats[StatManager.Stats.BOOKS] > 25 && stats[StatManager.Stats.BOOKS] <= 50:
+		book_sound.play() if sprite.texture != books2 else null
 		sprite.texture = books2
-		book_sound.play()
 	elif stats[StatManager.Stats.BOOKS] > 50 && stats[StatManager.Stats.BOOKS] <= 75:
+		book_sound.play() if sprite.texture != books3 else null
 		sprite.texture = books3
-		book_sound.play()
 	elif stats[StatManager.Stats.BOOKS] > 75:
+		book_sound.play() if sprite.texture != books4 else null
 		sprite.texture = books4
-		book_sound.play()
 	else:
 		sprite.texture = null
