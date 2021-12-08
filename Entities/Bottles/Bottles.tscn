@@ -1,10 +1,11 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://Entities/Bottles/Bottles.gd" type="Script" id=1]
 [ext_resource path="res://assets/art/bottles/bottles-3.png" type="Texture" id=2]
 [ext_resource path="res://assets/art/bottles/bottles-1.png" type="Texture" id=3]
 [ext_resource path="res://assets/art/bottles/bottles-4.png" type="Texture" id=4]
 [ext_resource path="res://assets/art/bottles/bottles-2.png" type="Texture" id=5]
+[ext_resource path="res://assets/sounds/bottle.mp3" type="AudioStream" id=6]
 
 [node name="Bottles" type="Control"]
 margin_right = 40.0
@@ -20,3 +21,6 @@ bottles3 = ExtResource( 2 )
 bottles4 = ExtResource( 4 )
 
 [node name="Sprite" type="Sprite" parent="."]
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 6 )

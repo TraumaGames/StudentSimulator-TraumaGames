@@ -1,10 +1,11 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://Entities/Books/Books.gd" type="Script" id=1]
 [ext_resource path="res://assets/art/book/libros_desordenados-2.png" type="Texture" id=2]
 [ext_resource path="res://assets/art/book/libros_ordenados.png" type="Texture" id=3]
 [ext_resource path="res://assets/art/book/libros_ordenados-2.png" type="Texture" id=4]
 [ext_resource path="res://assets/art/book/libros_desordenados.png" type="Texture" id=5]
+[ext_resource path="res://assets/sounds/book.mp3" type="AudioStream" id=6]
 
 [node name="Books" type="Control"]
 margin_right = 40.0
@@ -19,3 +20,6 @@ books3 = ExtResource( 5 )
 books4 = ExtResource( 2 )
 
 [node name="Sprite" type="Sprite" parent="."]
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 6 )
