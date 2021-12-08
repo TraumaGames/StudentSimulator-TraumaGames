@@ -11,6 +11,7 @@ __meta__ = {
 }
 
 [node name="HealthBar" parent="." instance=ExtResource( 2 )]
+visible = false
 theme = ExtResource( 3 )
 bar_name = "Dificultad del parcial"
 

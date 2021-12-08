@@ -48,6 +48,9 @@ custom_colors/font_outline_modulate = Color( 0.262745, 0.368627, 0.215686, 1 )
 custom_colors/font_color_shadow = Color( 0.282353, 0.345098, 0.270588, 1 )
 custom_fonts/font = SubResource( 1 )
 text = "Student Simulator"
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
 [node name="StartButton" parent="CenterContainer" instance=ExtResource( 1 )]
 anchor_top = 0.0383333
@@ -57,25 +60,6 @@ margin_top = 268.0
 margin_right = 637.0
 margin_bottom = 331.0
 text = "Jugar"
-
-[node name="PanelContainer" type="PanelContainer" parent="CenterContainer"]
-visible = false
-margin_left = 505.0
-margin_top = 293.0
-margin_right = 519.0
-margin_bottom = 307.0
-
-[node name="VBoxContainer" type="VBoxContainer" parent="CenterContainer/PanelContainer"]
-margin_left = 7.0
-margin_top = 7.0
-margin_right = 7.0
-margin_bottom = 7.0
-size_flags_horizontal = 4
-custom_constants/separation = 0
-
-[node name="Buttons" type="VBoxContainer" parent="CenterContainer/PanelContainer/VBoxContainer"]
-
-[node name="CenterContainer" type="CenterContainer" parent="CenterContainer/PanelContainer/VBoxContainer/Buttons"]
 
 [node name="MessageLabel" type="Label" parent="."]
 visible = false

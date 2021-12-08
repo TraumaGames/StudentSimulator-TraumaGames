@@ -25,6 +25,11 @@ _global_script_classes=[ {
 "path": "res://Entities/TagManager/AbstractTagRule.gd"
 }, {
 "base": "Control",
+"class": "BackgroundTexture",
+"language": "GDScript",
+"path": "res://Entities/BackgroundTexture/BackgroundTexture.gd"
+}, {
+"base": "Control",
 "class": "Books",
 "language": "GDScript",
 "path": "res://Entities/Books/Books.gd"
@@ -103,6 +108,7 @@ _global_script_class_icons={
 "AbstractState": "",
 "AbstractStateMachine": "",
 "AbstractTagRule": "",
+"BackgroundTexture": "",
 "Books": "",
 "Bottles": "",
 "ButtonMenu": "",

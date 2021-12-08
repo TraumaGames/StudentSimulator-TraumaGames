@@ -3,7 +3,7 @@ class_name StatManager
 
 signal stats_change(stats)
 
-enum Stats {ENERGY, SELF_ESTEEM, MENTAL_HEALTH, EXERCISES, BOOKS, BOTTLES}
+enum Stats {ENERGY, SELF_ESTEEM, MENTAL_HEALTH, EXERCISES, BOOKS, BOTTLES, STUDY}
 
 var _initialStats: Dictionary = {
 	Stats.ENERGY: 100,
@@ -11,7 +11,8 @@ var _initialStats: Dictionary = {
 	Stats.MENTAL_HEALTH: 100,
 	Stats.EXERCISES: 0,
 	Stats.BOOKS: 0,
-	Stats.BOTTLES: 0
+	Stats.BOTTLES: 0,
+	Stats.STUDY: 0
 }
 
 var stats = _initialStats.duplicate()

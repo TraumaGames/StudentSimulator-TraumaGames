@@ -14,7 +14,8 @@ onready var button_play : AudioStreamPlayer = $ButtonSound
 onready var calendar: Calendar = $Calendar
 onready var books: Books = $Books
 onready var bottles: Bottles = $Bottles
-onready var stat_dependents: Array = [stat_bars_manager, opened_qbook, books, bottles]
+onready var background_texture: BackgroundTexture = $ParallaxBackground/ParallaxLayer/BackgroundTexture
+onready var stat_dependents: Array = [stat_bars_manager, opened_qbook, books, bottles, background_texture]
 
 func _ready():
 	_set_initial_state()
