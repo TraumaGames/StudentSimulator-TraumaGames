@@ -14,6 +14,7 @@ onready var button_play : AudioStreamPlayer = $ButtonSound
 onready var calendar: Calendar = $Calendar
 onready var books: Books = $Books
 onready var bottles: Bottles = $Bottles
+onready var creeper: Creeper = $Creeper
 onready var background_texture: BackgroundTexture = $ParallaxBackground/ParallaxLayer/BackgroundTexture
 onready var stat_dependents: Array = [stat_bars_manager, opened_qbook, books, bottles, background_texture]
 
@@ -60,3 +61,6 @@ func _on_OpenedQbook_close_card(stats_update):
 	opened_qbook.close()
 	if opened_qbook.is_empty_card():
 		finish_game()
+
+func _on_Creeper_pressed():
+	creeper.boom()
