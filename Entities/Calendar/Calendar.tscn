@@ -30,7 +30,7 @@ tracks/0/keys = {
 "times": PoolRealArray( 0 ),
 "transitions": PoolRealArray( 1 ),
 "update": 0,
-"values": [ Vector2( 245, 121 ) ]
+"values": [ Vector2( 629, 160 ) ]
 }
 tracks/1/type = "value"
 tracks/1/path = NodePath(".:rect_scale")
@@ -70,16 +70,16 @@ tracks/1/keys = {
 "times": PoolRealArray( 0, 0.4 ),
 "transitions": PoolRealArray( 1, 1 ),
 "update": 0,
-"values": [ Vector2( 245, 121 ), Vector2( 311, 195 ) ]
+"values": [ Vector2( 629, 160 ), Vector2( 311, 195 ) ]
 }
 
 [node name="Calendar" type="TextureButton"]
 anchor_top = 0.002
 anchor_bottom = 0.002
-margin_left = 245.0
-margin_top = 121.0
-margin_right = 650.0
-margin_bottom = 335.0
+margin_left = 629.0
+margin_top = 160.0
+margin_right = 1034.0
+margin_bottom = 374.0
 rect_scale = Vector2( 0.3, 0.3 )
 texture_normal = ExtResource( 2 )
 script = ExtResource( 5 )

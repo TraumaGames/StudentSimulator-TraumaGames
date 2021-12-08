@@ -36,40 +36,37 @@ func save(result):
 	results.append(result)
 
 func generate_exam(card_exam,result):
-	if index<10 : 
+	if index<10: 
 		generate_card(card_exam,result)
 		card_exam.show_card()
-	else :
+	else:
 		card_exam.hide()
 		self.index= 0
 		self.calification=0
 		evaluate_exam()
 		card_result.initialize("Tu calificacion es: "+str(calification), "Finalizar")
-		calification=0 
+		calification=0
 		results=[]
 		exam_results=[]
 		card_result.show_card()
-		
+
 func generate_card(card_exam,type):
 	self.type_exam=type
 	if type=="easy":
 		for card in cards : 
 			if card.type()=="easy":
 				exam_results.append(card.correct)
-	
 		easy_exam[index].init_exam(card_exam)
 	else:
 		for card in cards : 
 			if card.type()=="hard":
 				exam_results.append(card.correct)
-
 		hard_exam[index].init_exam(card_exam)
 
 func evaluate_exam():
 	for i in range(0,10):
 		if(exam_results[i] == results[i]):
 			calification+=1
-				
-		
+
 func set_unary_card(card_res):
 	self.card_result= card_res

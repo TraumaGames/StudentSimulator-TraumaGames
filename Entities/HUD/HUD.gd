@@ -16,7 +16,7 @@ var result:String
 
 func game_over(state: Dictionary):
 	message_manager.set_unary_card(card_result)
-	result= message_manager.game_over_message(state)
+	result = message_manager.game_over_message(state)
 	message_manager.generate_exam(self.card_exam,result)
 	self.card_exam.show_card()
 	

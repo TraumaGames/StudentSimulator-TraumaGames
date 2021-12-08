@@ -5,14 +5,16 @@ onready var tag_manager: TagManager = $TagManager
 onready var stat_manager: StatManager = $StatManager
 onready var hud: HUD = $HUD
 onready var card = $Card
-onready var player: Player = $Player
+#onready var player: Player = $OpenedQbook/Player
 onready var stat_bars_manager: StatBarsManager = $StatBarsManager
-onready var opened_qbook: Node =$OpenedQbook
+onready var opened_qbook: Node = $OpenedQbook
 onready var init_sound :AudioStreamPlayer = $InitSound
 onready var qbook_open : AudioStreamPlayer = $QbookOpened
 onready var button_play : AudioStreamPlayer = $ButtonSound
 onready var calendar: Calendar = $Calendar
 onready var books: Books = $Books
+onready var bottles: Bottles = $Bottles
+onready var stat_dependents: Array = [stat_bars_manager, opened_qbook, books, bottles]
 
 func _ready():
 	_set_initial_state()
@@ -21,7 +23,7 @@ func start_game():
 	button_play.play()
 	init_sound.stop()
 	stat_bars_manager.show()
-	
+
 func reset_game():
 	opened_qbook.close()
 	_set_initial_state()
@@ -40,9 +42,12 @@ func _set_initial_state():
 	opened_qbook.reset()
 
 func _on_StatManager_stats_change(stats):
-	stat_bars_manager.update_stats(stats)
-	opened_qbook.update_stats(stats)
-	books.update_stats(stats)
+	for stat_dependent in stat_dependents:
+		stat_dependent.update_stats(stats)
+#	stat_bars_manager.update_stats(stats)
+#	opened_qbook.update_stats(stats)
+#	books.update_stats(stats)
+#	bottles.update_stats(stats)
 
 func _on_QBook_pressed():
 	qbook_open.play()

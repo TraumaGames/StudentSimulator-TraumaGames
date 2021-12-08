@@ -1,10 +1,13 @@
 [gd_scene load_steps=4 format=2]
 
-[ext_resource path="res://assets/art/card/qbook-hover.svg" type="Texture" id=1]
-[ext_resource path="res://assets/art/card/qbook-2.svg" type="Texture" id=2]
+[ext_resource path="res://assets/art/qbook/pc-2.png" type="Texture" id=1]
+[ext_resource path="res://assets/art/qbook/pc-1.png" type="Texture" id=2]
 [ext_resource path="res://Entities/QBook/QBook.gd" type="Script" id=3]
 
 [node name="QBook" type="TextureButton"]
+margin_right = 726.0
+margin_bottom = 171.0
+rect_scale = Vector2( 0.25, 0.25 )
 texture_normal = ExtResource( 2 )
 texture_pressed = ExtResource( 2 )
 texture_hover = ExtResource( 1 )

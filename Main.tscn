@@ -1,4 +1,4 @@
-[gd_scene load_steps=20 format=2]
+[gd_scene load_steps=21 format=2]
 
 [ext_resource path="res://Entities/HUD/HUD.tscn" type="PackedScene" id=1]
 [ext_resource path="res://assets/sounds/initSound.mp3" type="AudioStream" id=2]
@@ -9,7 +9,7 @@
 [ext_resource path="res://Entities/CardInformationManager/CardInformationManager.tscn" type="PackedScene" id=7]
 [ext_resource path="res://assets/sounds/button.mp3" type="AudioStream" id=8]
 [ext_resource path="res://Entities/TagManager/TagManager.tscn" type="PackedScene" id=9]
-[ext_resource path="res://assets/art/background/room.svg" type="Texture" id=10]
+[ext_resource path="res://assets/art/background/room-2.png" type="Texture" id=10]
 [ext_resource path="res://assets/art/background/desktop.svg" type="Texture" id=11]
 [ext_resource path="res://Entities/Card/CardExam.tscn" type="PackedScene" id=12]
 [ext_resource path="res://Entities/QBook/QBook.tscn" type="PackedScene" id=13]
@@ -17,6 +17,7 @@
 [ext_resource path="res://assets/sounds/silvido.wav" type="AudioStream" id=15]
 [ext_resource path="res://Entities/Calendar/Calendar.tscn" type="PackedScene" id=16]
 [ext_resource path="res://Entities/Books/Books.tscn" type="PackedScene" id=17]
+[ext_resource path="res://Entities/Bottles/Bottles.tscn" type="PackedScene" id=18]
 
 [sub_resource type="Animation" id=1]
 resource_name = "fade_to_black"
@@ -83,15 +84,16 @@ __meta__ = {
 
 [node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground"]
 
-[node name="Room" type="Sprite" parent="ParallaxBackground/ParallaxLayer"]
-position = Vector2( 511.945, 299.813 )
-scale = Vector2( 1.15358, 1.10342 )
+[node name="Room-2" type="Sprite" parent="ParallaxBackground/ParallaxLayer"]
+position = Vector2( 587.376, 304.199 )
+scale = Vector2( 0.63555, 0.607915 )
 texture = ExtResource( 10 )
 
 [node name="ParallaxLayer2" type="ParallaxLayer" parent="ParallaxBackground"]
 position = Vector2( -22, 0 )
 
 [node name="Desktop" type="Sprite" parent="ParallaxBackground/ParallaxLayer2"]
+visible = false
 position = Vector2( 526.401, 543.058 )
 texture = ExtResource( 11 )
 
@@ -115,27 +117,28 @@ anchor_left = 0.5
 anchor_top = 0.904
 anchor_right = 0.5
 anchor_bottom = 0.904
-margin_left = -184.0
-margin_top = -57.215
-margin_right = 177.0
-margin_bottom = 57.785
+margin_left = -214.063
+margin_top = -168.701
+margin_right = 511.937
+margin_bottom = 2.29926
 
 [node name="Books" parent="." instance=ExtResource( 17 )]
-margin_left = 253.0
-margin_top = 412.0
-margin_right = 293.0
-margin_bottom = 452.0
+margin_left = 344.0
+margin_top = 540.0
+margin_right = 384.0
+margin_bottom = 580.0
+rect_scale = Vector2( 0.5, 0.5 )
+
+[node name="Bottles" parent="." instance=ExtResource( 18 )]
+margin_left = 814.0
+margin_top = 347.0
+margin_right = 854.0
+margin_bottom = 387.0
 
 [node name="Calendar" parent="." instance=ExtResource( 16 )]
-margin_top = 119.8
-margin_bottom = 333.8
 initial_date = 22
 
 [node name="OpenedQbook" parent="." instance=ExtResource( 14 )]
-margin_left = -497.23
-margin_top = 302.353
-margin_right = 501.77
-margin_bottom = 857.353
 
 [node name="InitSound" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 2 )
