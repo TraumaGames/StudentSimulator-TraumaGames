@@ -29,6 +29,9 @@ margin_left = 1.14525
 margin_top = -0.746582
 margin_right = 1.14526
 margin_bottom = -0.746582
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
 [node name="Sprite" type="Sprite" parent="CenterContainer"]
 position = Vector2( 510.164, 310.817 )

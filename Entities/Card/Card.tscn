@@ -1,10 +1,11 @@
-[gd_scene load_steps=9 format=2]
+[gd_scene load_steps=10 format=2]
 
-[ext_resource path="res://assets/art/card/card-2.png" type="Texture" id=1]
+[ext_resource path="res://assets/art/card/card-2-card.png" type="Texture" id=1]
 [ext_resource path="res://assets/fonts/Roboto-Regular.ttf" type="DynamicFontData" id=2]
 [ext_resource path="res://Entities/Card/Card.gd" type="Script" id=3]
 [ext_resource path="res://Entities/MenuButton/MenuButton.tscn" type="PackedScene" id=4]
 [ext_resource path="res://assets/sounds/silvido.mp3" type="AudioStream" id=5]
+[ext_resource path="res://assets/art/card/card-2-decoration.png" type="Texture" id=6]
 
 [sub_resource type="DynamicFont" id=1]
 size = 25
@@ -60,8 +61,10 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-margin_top = -18.0
-margin_bottom = -18.0
+margin_left = 0.628662
+margin_top = -0.277283
+margin_right = 0.628662
+margin_bottom = -0.277283
 rect_scale = Vector2( 1e-05, 1e-05 )
 script = ExtResource( 3 )
 __meta__ = {
@@ -69,15 +72,21 @@ __meta__ = {
 }
 
 [node name="Sprite" type="Sprite" parent="."]
-position = Vector2( 5.59814, -3.87073 )
+position = Vector2( -51.5614, 57.2005 )
 scale = Vector2( 0.65, 0.65 )
 texture = ExtResource( 1 )
+offset = Vector2( 80.2455, -87.8019 )
+
+[node name="Sprite2" type="Sprite" parent="."]
+position = Vector2( 236.755, -138.529 )
+scale = Vector2( 0.6, 0.6 )
+texture = ExtResource( 6 )
 
 [node name="Text" type="Label" parent="."]
-margin_left = -287.0
-margin_top = -47.0
-margin_right = 206.0
-margin_bottom = 136.0
+margin_left = -260.0
+margin_top = -99.0
+margin_right = 264.0
+margin_bottom = 84.0
 custom_colors/font_color = Color( 0.0431373, 0.0823529, 0.0156863, 1 )
 custom_fonts/font = SubResource( 1 )
 text = "Dedicate a otra cosa | Na mentira"
@@ -88,10 +97,10 @@ __meta__ = {
 }
 
 [node name="CenterAccept" type="CenterContainer" parent="."]
-margin_left = -330.842
-margin_top = 127.198
-margin_right = -25.8428
-margin_bottom = 205.198
+margin_left = -287.0
+margin_top = 74.8089
+margin_right = 17.9992
+margin_bottom = 152.809
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -105,18 +114,18 @@ rect_min_size = Vector2( 200, 50 )
 size_flags_vertical = 6
 
 [node name="CenterCancel" type="CenterContainer" parent="."]
-margin_left = -57.763
-margin_top = 127.238
-margin_right = 247.237
-margin_bottom = 205.238
+margin_left = -18.0091
+margin_top = 74.8089
+margin_right = 286.991
+margin_bottom = 152.809
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="Cancel" parent="CenterCancel" instance=ExtResource( 4 )]
-margin_left = 26.0
+margin_left = 27.0
 margin_top = 7.0
-margin_right = 277.0
+margin_right = 278.0
 margin_bottom = 70.0
 rect_min_size = Vector2( 200, 50 )
 text = ""
