@@ -55,6 +55,7 @@ func _on_QBook_pressed():
 	opened_qbook.open()
 
 func _on_OpenedQbook_close_card(stats_update):
+	hud.fade()
 	calendar.set_next_day()
 	stat_manager.update_stats(stats_update)
 	opened_qbook.next_card()

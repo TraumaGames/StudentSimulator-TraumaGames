@@ -13,6 +13,7 @@ onready var card_result= $Node/CardUnary
 onready var world = $World
 
 var result:String
+onready var animation_player: AnimationPlayer = $AnimationPlayer
 
 func game_over(state: Dictionary):
 	message_manager.set_unary_card(card_result)
@@ -26,6 +27,9 @@ func game_over(state: Dictionary):
 func _on_StartButton_pressed():
 	hud_container.hide()
 	emit_signal("start_game")
+
+func fade():
+	animation_player.play("fade")
 
 func wait():
 	message_label.text = message_manager.wait_message()
@@ -46,5 +50,6 @@ func _on_CardExam_save_result(text):
 
 
 func _on_CardUnary_new_game():
-  emit_signal("reset_game")
-  hud_container.show()
+	emit_signal("reset_game")
+	fade()
+	hud_container.show()
